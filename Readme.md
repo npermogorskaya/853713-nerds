@@ -5,6 +5,27 @@
 
 ---
 
+cd Desktop/site/853713-nerds
+
+Для того, чтобы добавить коммит необходимо сделать следующее:
+git status
+git add . 
+git commit -m "текст"
+
+
+git push
+Вводим  email - npermogorskaya@gmail.com
+Dводим пароль
+
+По 5 пункту - нью пулреквест
+А потом мне надо нажать на две зеленые кнопки
+
+6 казать кнопку в интерфейсе ак4адемии - найти пулреквест
+Нажимаю опубликовать
+
+==============================================================
+
+
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
@@ -45,3 +66,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS, уровень 1]
 (https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+
+===================================
+
