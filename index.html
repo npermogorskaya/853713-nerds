@@ -11,15 +11,12 @@
         <a class="main-header-logo">
          <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип магазина  «nёrd's»">
         </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clientele.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="login-link"><img src="img/header/cart-icon.svg" width="15" height="15" alt="Корзина»">Корзина</li>
-        </ul>
+          <a href="studio.html">Студия</a>
+          <a href="clientele.html">Клиенты</a>
+          <a href="catalog.html">Магазин</a>
+          <a href="contacts.html">Контакты</a>
+          <img src="img/header/cart-icon.svg" width="15" height="15" alt="Корзина»">
+          <a href="cart.html">Корзина</a>
       </nav>
     </header>
 
@@ -28,7 +25,7 @@
     
       <section class="main-slider">
     
-        <div class="main-slider">
+        <div class="main-slider-item">
           <h2 class="offer-title">Долго, дорого, <br>скрупулезно</h2>
           <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
           <a class="button" href="news-1.html">узнать больше</a>
@@ -39,7 +36,7 @@
           </p>
         </div>
     
-        <div class="main-slider">
+        <div class="main-slider-item">
           <h2 class="offer-title">Любим математику <br>как никто другой</h2>
           <p>математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
           <a class="button" href="news-2.html">узнать больше</a>
@@ -49,7 +46,7 @@
           </p>
         </div>
     
-        <div class="main-slider">
+        <div class="main-slider-item">
           <h2 class="offer-title">Только ночь, <br>только хардкор</h2>
           <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
           <a class="button" href="news-3.html">узнать больше</a>
@@ -89,33 +86,42 @@
           <!-- Здесь будет форма -->
         </li>
       </ul>
-    </section>
+    </section> <!-- main-slider -->
 
     <section class="shop">
-    
-      <h2 class="shop-titie">Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
-    
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
-        как роботы. </p>
+
+      <h2 class="shop-titie">Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>      
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как
+        роботы. </p>
       <h3> Выполняем заказы на разработку:</h3>
-      <p> - Веб-сайтов любой сложности</p>
-      <p> - Мобильных приложений для IOS и Android</p>
-      <p> - Слайдшоу и видео для корпорративных презентаций</p>
+
+      <ul>
+        <li>
+          <p> Веб-сайтов любой сложности</p>
+        </li>
+        <li>
+          <p> Мобильных приложений для IOS и Android</p>        
+        </li>
+        <li>
+          <p> Слайдшоу и видео для корпорративных презентаций</p>        
+        </li>
+      </ul>  
+            
       <img src="img/shop/nerds-illustration.png" width="360" height="208" alt="Логотип на цветном фоне">
       <p> С 2004 Года любим точность во всем:</p>
     
       <ul class="shop-navigation">
         <li>
           146%
-          <p> Уровень <br> самоотдачи</p>
+          <p> Уровень самоотдачи</p>
         </li>
         <li>
           100%
-          <p> Соблюдение <br> сроков</p>
+          <p> Соблюдение сроков</p>
         </li>
         <li>
           50%
-          <p> Минимальная <br> предоплата</p>
+          <p> Минимальная предоплата</p>
         </li>
       </ul>
     
@@ -124,12 +130,19 @@
     <section class="clientele">
     
       <h2 class="visually-hidden">Нам доверяют</h2>
-    
-      <img src="img/clientele/logo-1.png" width="209" height="90" alt="Логотип html academy">
-      <img src="img/clientele/logo-2.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»">
-      <img src="img/clientele/logo-3.png" width="209" height="90" alt="Логотип Pink">
-      <img src="img/clientele/logo-4.png" width="209" height="90" alt="Логотип Mishka">
-    
+      <a class="main-header-logo" href="htmlacademy.html">
+       <img src="img/clientele/logo-1.png" width="209" height="90" alt="Логотип html academy">
+      </a>
+      <a class="main-header-logo" href="barbershop.html">
+        <img src="img/clientele/logo-2.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»">
+      </a>
+      <a class="main-header-logo" href="pink.html">
+        <img src="img/clientele/logo-3.png" width="209" height="90" alt="Логотип Pink">      
+      </a>
+      <a class="main-header-logo" href="mishka.html">
+        <img src="img/clientele/logo-4.png" width="209" height="90" alt="Логотип Mishka">      
+      </a>
+      
     </section> 
         
     <section class="contacts">
