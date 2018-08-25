@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<main class="container">
 
 <header class="main-header">
  <nav class="main-navigation">
@@ -17,7 +18,7 @@
    <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип магазина  «nёrd's»">
   </a>
 
-  <ul>
+  <ul class="site-navigation">
    <li>    <a href="studio.html">Студия</a> </li>
    <li>    <a href="clientele.html">Клиенты</a></li>
    <li>    <a class="site-navigation-current" href="catalog.html">Магазин</a> </li>
@@ -30,7 +31,7 @@
  <h1 class="page-title">Магазин готовых шаблонов</h1>
 </header>
 
-<main class="container">
+
 
  <ul class="tab">
   <li>стоимость:</li>
@@ -54,7 +55,7 @@
    <section class="hover-1">    
     <h2>Sedona</h2>
     <p>Информационный сайт <br> для туристов</p>
-    <button class="button" type="button">9900 руб.
+    <button class="button-catalog" type="button">9900 руб.
       <!-- Здесь будет форма 2 -->
     </button>
    </section>
@@ -66,7 +67,7 @@
    <section class="hover-2">
     <h2>Pink App</h2>
     <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
-    <button class="button" type="button">9900 руб.
+    <button class="button-catalog" type="button">9900 руб.
       <!-- Здесь будет форма 2 -->
     </button>
    </section> 
@@ -78,7 +79,7 @@
    <section class="hover-3">
     <h2>Barbershop</h2>
     <p>Сайт для салона красоты. <br> Для мужчин, да.</p>
-    <button class="button" type="button">9900 руб.
+    <button class="button-catalog" type="button">9900 руб.
       <!-- Здесь будет форма 2 -->
     </button>
    </section>
@@ -90,7 +91,7 @@
    <section class="hover-4">
     <h2>Mishka</h2>
     <p>Интернет магазин <br> вязанных игрушек</p>
-    <button class="button" type="button">9900 руб.
+    <button class="button-catalog" type="button">9900 руб.
       <!-- Здесь будет форма 2 -->
     </button>
    </section>
@@ -102,7 +103,7 @@
    <section class="hover-5">
     <h2>A Plus</h2>
     <p>Лендинг курсов повышения <br> квалификации</p>
-    <button class="button" type="button">9900 руб.
+    <button class="button-catalog" type="button">9900 руб.
       <!-- Здесь будет форма 2 -->
     </button>
    </section>
@@ -114,7 +115,7 @@
    <section class="hover-6">
     <h2>Kvast</h2>
     <p>Промо-сайт производителя <br> крафтового кваса</p>
-    <button class="button" type="button">9900 руб.
+    <button class="button-catalog" type="button">9900 руб.
       <!-- Здесь будет форма 2 -->
     </button>
    </section>
@@ -129,84 +130,95 @@
 
  </section>
  
- <section class="contacts">
- 
-  <h2 class="visually-hidden">Наши контакты</h2>
-  <h3 class="contacts-title">hёrds desing studio</h3>
- 
-  <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-  <p> тел. +7 (812) 275-75-75</p>
- 
-  <button class="button" type="button">напишите нам </button>
-    <!-- Здесь будет форма 1 -->
-  
- </section>
+    </section>
+    
+    <section class="contacts">
+    
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <h3 class="contacts-title">hёrds desing studio</h3>
+    
+      <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+      <p> тел. +7 (812) 275-75-75</p>
+    
+    
+      <button class="button-contacts" type="button">напишите нам </button>
+      <!-- Здесь будет форма 1-->
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/contacts/map-marker.jpg" width="1440" height="415" alt="Офис компании по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8, тел. +7 (812) 275-75-75 ">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+    </section>
 
 </main>
 
 <footer class="main-footer">
 
- <div class="footer-social">
-  <ul>
-   <li><a class="social-button" href="#">Вконтакте</a></li>
-   <li><a class="social-button" href="#">Фейсбук</a></li>
-   <li><a class="social-button" href="#">Инстаграм</a></li>
-  </ul>
- </div>
+  <div class="footer-social">
+    <ul class="footer-navigation">
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
 
- <b>Давайте дружить!</b>
- <p> Скидка 10% для друзей из социальных сетей.</p>
+  <b>Давайте дружить!</b>
+  <p> Скидка 10% для друзей из социальных сетей.</p>
 
-</footer>       
+</footer>
 
-  <!-- Форма 1 -->
-      
-      <section class="popap popap-login">
-        <h2>Напишите нам</h2>
-      
-        <form class="popap-form" action="https://echo.htmlacademy.ru" method="post">
-      
-          <p class="popap-item">
-            <label for="popap-name">Ваше имя:</label>
-            <input id="popap-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-      
-          <p class="popap-item">
-            <label for="popap-email">Ваш е-mail:</label>
-            <input id="popap-email" type="tel" name="email" value="" placeholder="email@example.com">
-          </p>
-      
-          <p class="popap-item">
-            <label for="popap-textarea">Текст письма:</label>
-            <textarea id="popap-textarea" type="textarea" name="your-message" cols="40" rows="5" value="" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
+<!-- Форма 1 -->
 
-    <!-- Форма 2 -->
+<section class="popap popap-login">
+  <h2>Напишите нам</h2>
 
-      <section class="modal modal-login">
-        <h2>Оформить заказ</h2>
-        <p>Введите свой логин и пароль.</p>
-      
-        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      
-          <p class="modal-item">
-            <label class="visually-hidden" for="modal-date">Ваше имя:</label>
-            <input id="modal-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-      
-          <p class="modal-item">
-            <label class="visually-hidden" for="modal-tel">Ваш е-mail:</label>
-            <input id="modal-email" type="tel" name="email" value="" placeholder="email@example.com">
-          </p>
-      
-          <button class="button" type="submit">Заказать</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
+  <form class="popap-form" action="https://echo.htmlacademy.ru" method="post">
+
+    <p class="popap-item">
+      <label for="popap-name">Ваше имя:</label>
+      <input id="popap-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+    </p>
+
+    <p class="popap-item">
+      <label for="popap-email">Ваш е-mail:</label>
+      <input id="popap-email" type="tel" name="email" value="" placeholder="email@example.com">
+    </p>
+
+    <p class="popap-item ">
+      <label for="popap-textarea ">Текст письма:</label>
+      <textarea id="popap-textarea " type="textarea " name="your-message " cols="40 " rows="5 " value="
+              " placeholder="В свободной форме "></textarea>
+    </p>
+    <button class="button-popap" type="submit ">Отправить</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<!-- Форма 2 -->
+
+<section class="modal modal-login ">
+  <h2>Оформить заказ</h2>
+  <p>Введите свой логин и пароль.</p>
+
+  <form class="modal-form " action="https://echo.htmlacademy.ru " method="post ">
+
+    <p class="modal-item ">
+      <label class="visually-hidden " for="modal-date ">Ваше имя:</label>
+      <input id="modal-name " type="text " name="name " value="" placeholder="Имя Фамилия ">
+    </p>
+
+    <p class="modal-item ">
+      <label class="visually-hidden " for="modal-tel ">Ваш е-mail:</label>
+      <input id="modal-email " type="tel " name="email " value="" placeholder="email@example.com ">
+    </p>
+
+    <button class="button-modal" type="submit ">Заказать</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
+
 
 </body>
 

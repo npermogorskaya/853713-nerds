@@ -13,7 +13,8 @@ a {
 .site-navigation,
 .shop-navigation,
 .footer-navigation,
-.list-of-services {
+.list-of-services,
+.tab {
   list-style: none;
 }
 .site-navigation a {
@@ -29,7 +30,8 @@ a {
 }
 
 
-.main-header-slider{
+.main-header-slider,
+.main-header {
   background-color: #eeeeee;
 }
 
@@ -188,3 +190,38 @@ b {
 .button-modal:hover {
   background-color: #e74246;
 }
+
+
+.hover-1,
+.hover-2,
+.hover-3,
+.hover-4,
+.hover-5,
+.hover-6 {
+  background-color: #eeeeee;
+}
+.button-catalog {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button-catalog:hover {
+  background-color: #e74246;
+}
+.hover-1 h2,
+.hover-2 h2,
+.hover-3 h2,
+.hover-4 h2,
+.hover-5 h2,
+.hover-6 h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+} 
