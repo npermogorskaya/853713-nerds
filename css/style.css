@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto",  Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+}
+a {
+  text-decoration: none;
+}
+.site-navigation,
+.shop-navigation,
+.footer-navigation,
+.list-of-services {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000;
+}
+.site-navigation a:hover,
+.саке-link:hover {
+  color: #fb565a;
+}
+.site-navigation a:focus,
+.саке-link:focus {
+  color: #e4e4e4;
+}
+
+
+.main-header-slider{
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-family: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;  
+}
+.саке-link {
+  color: #000;  
+}
+.main-slider h2 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+.button-slider {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button-slider:hover {
+  background-color: #e74246;
+}
+
+.services {
+  background-color: #fff;
+}
+.list-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.button-services-1 {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button-services-1:hover {
+  background-color: #e74246;
+}
+.button-services-2 {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #00ca74;
+  border: none;
+}
+.button-services-2:hover {
+  background-color: #00bc6c;
+}
+.button-services-3 {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #efc84a;
+  border: none;
+}
+.button-services-3:hover {
+  background-color: #eab535;
+}
+
+.shop h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.shop h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.shop-number {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+.contacts h3 {
+  font-family: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button-contacts {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button-contacts:hover {
+  background-color: #e74246;
+}
+b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.footer p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.popap-login h2,
+.modal-login h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 400;
+}
+.popap-item,
+.modal-item { 
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.button-popap,
+.button-modal {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button-popap:hover,
+.button-modal:hover {
+  background-color: #e74246;
+}
