@@ -14,10 +14,14 @@ a {
 .shop-navigation,
 .footer-navigation,
 .list-of-services,
-.tab {
+.tab,
+.tab-filters,
+.filter-option {
   list-style: none;
 }
-.site-navigation a {
+.site-navigation a,
+.tab a,
+.tab-filters a {
   color: #000;
 }
 .site-navigation a:hover,
@@ -62,6 +66,9 @@ a {
 }
 .button-slider:hover {
   background-color: #e74246;
+}
+.button-gallery-nnavigation {
+  text-align: center;
 }
 
 .services {
@@ -191,6 +198,53 @@ b {
   background-color: #e74246;
 }
 
+legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tab {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tab-filters{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.breadcrumbs-current a {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.filters-item {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.button-filters {
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+  border: none;
+}
+.button-filters:hover {
+  background-color: #e0e0e0;
+}
 
 .hover-1,
 .hover-2,
