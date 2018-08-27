@@ -35,7 +35,8 @@ a {
 
 
 .main-header-slider,
-.main-header {
+.main-header,
+.title {
   background-color: #eeeeee;
 }
 
