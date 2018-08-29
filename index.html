@@ -9,71 +9,83 @@
   </head>
   <body>
  
-  <header class="main-header">
+  <header class="main-header">  
+    <div class="container">
       <nav class="main-navigation">
+        
         <a class="main-header-logo">
-         <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип магазина  «nёrd's»"></a>
+         <img src="img/header/nerds-logo.svg" alt="Логотип магазина  «nёrd's»"></a>        
           <ul class="site-navigation">
             <li>  <a href="studio.html">Студия</a> </li>
             <li>  <a href="clientele.html">Клиенты</a> </li>
             <li>  <a href="catalog.html">Магазин</a> </li>
             <li>  <a href="contacts.html">Контакты</a></li>
           </ul>        
-             
-          <a class="саке-link" href="cart.html">Корзина</a>
-      </nav>
+          <ul class="user-navigation">
+            <li>  <a class="саке-link" href="cart.html">Корзина</a></li>
+          </ul>
+        </div>
+        
+      </nav> 
+      </div>
   </header>
     
-  <main class="container">
-
+  <main>
+    
     <div class="main-header-slider">    
       <!--<h1 class="visually-hidden">Интернет-магазин - nёrd's</h1> -->   
       <section class="main-slider">
+        <div class="container">
     
         <div class="main-slider-item">
+
+          <div class="main-slider-text">
           <h2 class="offer-title">Долго, дорого, <br>скрупулезно</h2>
           <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
           <button class="button-slider" type="button">узнать больше
              <!-- Здесь будет форма -->
-          </button>          
+          </button>   
+          </div>
           
           <p class="product-photo-full">
             <img src="img/main-slider/slide1.png" width="760" height="413" alt="Фото планшетов с изображением приложений">
           </p>
         </div>
     
-        <div class="main-slider-item">
+        <!-- <div class="main-slider-item">
           <h2 class="offer-title">Любим математику <br>как никто другой</h2>
           <p>математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
           <button class="button-slider" type="button">узнать больше
-            <!-- Здесь будет форма -->
+            Здесь будет форма 
           </button>
           <p class="product-photo-full">
             <img src="img/main-slider/slide2.png" width="760" height="413" alt="Фото телефонов с изображением приложений">
           </p>
-        </div>
+        </div>-->
     
-        <div class="main-slider-item">
+        <!-- <div class="main-slider-item">
           <h2 class="offer-title">Только ночь, <br>только хардкор</h2>
           <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
           <button class="button-slider" type="button">узнать больше
-            <!-- Здесь будет форма -->
+            Здесь будет форма 
           </button>
           <p class="product-photo-full">
             <img src="img/main-slider/slide3.png" width="760" height="413" alt="Фото телефона и планшета с приложениями">
           </p>
-        </div>   
-      </section>
-    <div class="button-gallery-nnavigation">
+        </div>  -->
+      </div>
+    </section>
+    <!-- <div class="button-gallery-nnavigation">
       <button class="button-gallery" type="button"></button>
       <button class="button-gallery" type="button"></button>
       <button class="button-gallery" type="button"></button>
-     </div>
-    </div>
+     </div> -->
+    </div> 
 
     <section class="services">  
+      <div class="container">
 
-      <h2 class="visually-hidden">Список услуг</h2>
+      <!-- <h2 class="visually-hidden">Список услуг</h2> -->
     
       <ul class="list-of-services">
         <li class="list-item">
@@ -102,17 +114,21 @@
             <!-- Здесь будет форма -->
           </button>
         </li>
-      </ul>
+      </ul>      
+    </div>
     </section> <!-- services-->
 
-    <section class="shop">
+    <section class="container">
+      <div class="shop">
+
+        <div class="shop-title">
 
       <h2>Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>      
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как
         роботы. </p>
       <h3> Выполняем заказы на разработку:</h3>
 
-      <ul class="shop-navigation">
+      <ul class="shop-navigation-text">
         <li>
           <p> Веб-сайтов любой сложности</p>
         </li>
@@ -123,30 +139,35 @@
           <p> Слайдшоу и видео для корпорративных презентаций</p>        
         </li>
       </ul>  
-            
+      </div>
+
+      <div class="shop-img">
       <img src="img/shop/nerds-illustration.png" width="360" height="208" alt="Логотип на цветном фоне">
       <h3> С 2004 Года любим точность во всем:</h3>
     
       <ul class="shop-navigation">
-        <li>
+        <li class="shop-item">
           <p class="shop-number">146<sup>%</sup></p>
           <p> Уровень самоотдачи</p>
         </li>
-        <li>
+        <li class="shop-item">
           <p class="shop-number">100<sup>%</sup></p>
           <p> Соблюдение сроков</p>
         </li>
-        <li>
+        <li class="shop-item">
           <p class="shop-number">50<sup>%</sup></p>
           <p> Минимальная предоплата</p>
         </li>
       </ul>
-    
+      </div>
+
+      </div>    
     </section>
 
-    <section class="clientele">
+    <section class="container">
+      <div class="clientele">
     
-      <h2 class="visually-hidden">Наши клиенты</h2>
+      <!-- <h2 class="visually-hidden">Наши клиенты</h2> -->
       <a class="main-header-logo" href="htmlacademy.html">
        <img src="img/clientele/logo-1.png" width="209" height="90" alt="Логотип html academy">
       </a>
@@ -159,15 +180,17 @@
       <a class="main-header-logo" href="mishka.html">
         <img src="img/clientele/logo-4.png" width="209" height="90" alt="Логотип Mishka">      
       </a>
-      
+
+      </div>      
     </section> 
   </main>
 
-  <footer class="main-footer">
+  <div class="main-footer">
         
-    <section class="contacts">
+    <section class="container">
+      <div class="contacts">
     
-      <h2 class="visually-hidden">Наши контакты</h2>
+      <!-- <h2 class="visually-hidden">Наши контакты</h2> -->
       <h3 class="contacts-title">hёrds desing studio</h3>
     
       <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
@@ -175,16 +198,19 @@
     
      
       <button class="button-contacts" type="button">напишите нам </button>
-        <!-- Здесь будет форма 1-->
+        <!-- Здесь будет форма 1
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
-          <img src="img/contacts/map-marker.jpg" width="1440" height="415" alt="Офис компании по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8, тел. +7 (812) 275-75-75 ">
-        </p>
+        
         <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </section>    
-    
+      </section> -->
+      </div>
+    </section>  
+    </div>
+
+  <footer class="container">
+    <section class="footer-wrapper">
+
       <div class="footer-social">
         <ul class="footer-navigation">
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -192,13 +218,14 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-    
-      <b>Давайте дружить!</b>
+    <div class="footer-text">
+      <b>Давайте дружить, это выгодно!</b>
       <p> Скидка 10% для друзей из социальных сетей.</p>
-    
+    </div>
+    </section>
   </footer>
 
-      <!-- Форма 1 -->
+      <!-- Форма 1 
       
       <section class="popap popap-login">
         <h2>Напишите нам</h2>
@@ -225,7 +252,7 @@
               <button class="modal-close" type="button">Закрыть</button>
             </section>
 
-      <!-- Форма 2 -->
+       Форма 2 
       
       <section class="modal modal-login ">
         <h2>Оформить заказ</h2>
@@ -246,7 +273,7 @@
           <button class="button-modal" type="submit ">Заказать</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
-      </section>
+      </section> -->
           
   </body>
 </html>
