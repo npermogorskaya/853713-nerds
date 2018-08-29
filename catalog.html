@@ -13,22 +13,24 @@
   
 
 <header class="main-header">
- <nav class="main-navigation">
-  <a class="main-header-logo" href="index.html">
-   <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип магазина  «nёrd's»">
-  </a>
+  <div class="container">
+    <nav class="main-navigation">
 
-  <ul class="site-navigation">
-   <li>    <a href="studio.html">Студия</a> </li>
-   <li>    <a href="clientele.html">Клиенты</a></li>
-   <li>    <a class="site-navigation-current" href="catalog.html">Магазин</a> </li>
-   <li>    <a href="contacts.html">Контакты</a></li>   
-  </ul>
-  
-  <a class="саке-link" href="cart.html">Корзина</a>
-     
- </nav>
+      <a class="main-header-logo">
+        <img src="img/header/nerds-logo.svg" alt="Логотип магазина  «nёrd's»"></a>
+      <ul class="site-navigation">
+        <li> <a href="studio.html">Студия</a> </li>
+        <li> <a href="clientele.html">Клиенты</a> </li>
+        <li> <a href="catalog.html">Магазин</a> </li>
+        <li> <a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a class="саке-link" href="cart.html">Корзина</a>
+      </div>
+  </div>
 
+  </nav>
+  </div>
 </header>
 
 <main class="container">
@@ -198,39 +200,44 @@
  </section>
 </main>
 
-<footer class="main-footer">
-    
-    <section class="contacts">
-    
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <h3 class="contacts-title">hёrds desing studio</h3>
-    
-      <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-      <p> тел. +7 (812) 275-75-75</p>
-    
-    
-      <button class="button-contacts" type="button">напишите нам </button>
-      <!-- Здесь будет форма 1-->
+<footer>
+
+  <div class="footer-contacts">
+    <div class="container">
+      <div class="contacts">
+
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <h3 class="contacts-title">hёrds desing studio</h3>
+
+        <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p> тел. +7 (812) 275-75-75</p>
+
+
+        <button class="button-contacts" type="button">напишите нам </button>
+        <!-- Здесь будет форма 1
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
-          <img src="img/contacts/map-marker.jpg" width="1440" height="415" alt="Офис компании по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8, тел. +7 (812) 275-75-75 ">
-        </p>
+        
         <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </section>
-
-  <div class="footer-social">
-    <ul class="footer-navigation">
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-    </ul>
+      </section> -->
+      </div>
+    </div>
   </div>
-
-  <b>Давайте дружить, это выгоднв!</b>
-  <p> Скидка 10% для друзей из социальных сетей.</p>
-
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-social">
+        <ul class="footer-navigation">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="footer-text">
+        <b>Давайте дружить, это выгодно!</b>
+        <p> Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <!-- Форма 1 
