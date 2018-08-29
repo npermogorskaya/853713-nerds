@@ -21,19 +21,19 @@
             <li>  <a href="catalog.html">Магазин</a> </li>
             <li>  <a href="contacts.html">Контакты</a></li>
           </ul>        
-          <ul class="user-navigation">
-            <li>  <a class="саке-link" href="cart.html">Корзина</a></li>
-          </ul>
+          <div class="user-navigation">
+            <a class="саке-link" href="cart.html">Корзина</a>
+          </div>
         </div>
         
       </nav> 
       </div>
   </header>
     
-  <main>
+  <main class="main-part">
     
     <div class="main-header-slider">    
-      <!--<h1 class="visually-hidden">Интернет-магазин - nёrd's</h1> -->   
+      <h1 class="visually-hidden">Интернет-магазин - nёrd's</h1>  
       <section class="main-slider">
         <div class="container">
     
@@ -42,9 +42,8 @@
           <div class="main-slider-text">
           <h2 class="offer-title">Долго, дорого, <br>скрупулезно</h2>
           <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-          <button class="button-slider" type="button">узнать больше
-             <!-- Здесь будет форма -->
-          </button>   
+          <a class="slider-link" href="services.html">узнать больше</a>          
+             <!-- Здесь будет переход на другую страницу -->  
           </div>
           
           <p class="product-photo-full">
@@ -53,22 +52,26 @@
         </div>
     
         <!-- <div class="main-slider-item">
+          <div class="main-slider-text">
           <h2 class="offer-title">Любим математику <br>как никто другой</h2>
           <p>математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <button class="button-slider" type="button">узнать больше
-            Здесь будет форма 
-          </button>
+          <a class="slider-link" href="services.html">узнать больше</a>
+          Здесь будет переход на другую страницу
+          </div>
+
           <p class="product-photo-full">
             <img src="img/main-slider/slide2.png" width="760" height="413" alt="Фото телефонов с изображением приложений">
           </p>
         </div>-->
     
         <!-- <div class="main-slider-item">
+          <div class="main-slider-text">
           <h2 class="offer-title">Только ночь, <br>только хардкор</h2>
           <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <button class="button-slider" type="button">узнать больше
-            Здесь будет форма 
-          </button>
+          <a class="slider-link" href="services.html">узнать больше</a>
+          Здесь будет переход на другую страницу 
+        </div>
+
           <p class="product-photo-full">
             <img src="img/main-slider/slide3.png" width="760" height="413" alt="Фото телефона и планшета с приложениями">
           </p>
@@ -81,44 +84,38 @@
       <button class="button-gallery" type="button"></button>
      </div> -->
     </div> 
+  <div class="container">
+     <section class="services">        
 
-    <section class="services">  
-      <div class="container">
-
-      <!-- <h2 class="visually-hidden">Список услуг</h2> -->
+      <h2 class="visually-hidden">Список услуг</h2>
     
       <ul class="list-of-services">
         <li class="list-item">
           <img src="img/services/illustration-1.png" width="300" height="145" alt="Монитор">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним<br>после того как увидит ваш сайт!</p>
-          <button class="button-services-1" type="button">заказать
-            <!-- Здесь будет форма -->
-          </button>
+          <a class="services-link-1" href="modal.html">заказать</a>          
+            <!-- Здесь будет переход на модальное окно -->        
         </li>
     
         <li class="list-item">
           <img src="img/services/illustration-2.png" width="300" height="145" alt="Мобильные телефоны">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в <br>AppStore и Google Play</p>
-          <button class="button-services-2" type="button">заказать
-            <!-- Здесь будет форма -->
-          </button>
+          <a class="services-link-2" href="modal.html">заказать</a>
+          <!-- Здесь будет переход на модальное окно -->
         </li>
     
         <li class="list-item">
           <img src="img/services/illustration-3.png" width="300" height="145" alt="Презентация">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, <br>насколько вы изумительны!</p>
-          <button class="button-services-3" type="button">заказать
-            <!-- Здесь будет форма -->
-          </button>
+          <a class="services-link-3" href="modal.html">заказать</a>
+          <!-- Здесь будет переход на модальное окно -->
         </li>
       </ul>      
-    </div>
     </section> <!-- services-->
-
-    <section class="container">
+  
       <div class="shop">
 
         <div class="shop-title">
@@ -162,35 +159,32 @@
       </div>
 
       </div>    
-    </section>
-
-    <section class="container">
-      <div class="clientele">
     
-      <!-- <h2 class="visually-hidden">Наши клиенты</h2> -->
-      <a class="main-header-logo" href="htmlacademy.html">
+      <div class="clientele">    
+      <h2 class="visually-hidden">Наши клиенты</h2>
+      <a class="clientele-logo" href="htmlacademy.html">
        <img src="img/clientele/logo-1.png" width="209" height="90" alt="Логотип html academy">
       </a>
-      <a class="main-header-logo" href="barbershop.html">
+      <a class="clientele-logo" href="barbershop.html">
         <img src="img/clientele/logo-2.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»">
       </a>
-      <a class="main-header-logo" href="pink.html">
+      <a class="clientele-logo" href="pink.html">
         <img src="img/clientele/logo-3.png" width="209" height="90" alt="Логотип Pink">      
       </a>
-      <a class="main-header-logo" href="mishka.html">
+      <a class="clientele-logo" href="mishka.html">
         <img src="img/clientele/logo-4.png" width="209" height="90" alt="Логотип Mishka">      
       </a>
-
       </div>      
     </section> 
   </main>
 
-  <div class="main-footer">
-        
-    <section class="container">
-      <div class="contacts">
+  <footer>        
     
-      <!-- <h2 class="visually-hidden">Наши контакты</h2> -->
+    <div class="footer-contacts">
+      <div class="container">
+       <div class="contacts">
+    
+      <h2 class="visually-hidden">Наши контакты</h2>
       <h3 class="contacts-title">hёrds desing studio</h3>
     
       <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
@@ -204,13 +198,11 @@
         
         <button class="modal-close" type="button">Закрыть</button>
       </section> -->
+       </div>  
       </div>
-    </section>  
     </div>
-
-  <footer class="container">
-    <section class="footer-wrapper">
-
+  <div class="container">
+     <div class="footer-wrapper">    
       <div class="footer-social">
         <ul class="footer-navigation">
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -222,7 +214,8 @@
       <b>Давайте дружить, это выгодно!</b>
       <p> Скидка 10% для друзей из социальных сетей.</p>
     </div>
-    </section>
+   </div>
+  </div>
   </footer>
 
       <!-- Форма 1 

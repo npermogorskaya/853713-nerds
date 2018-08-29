@@ -39,8 +39,21 @@ a {
 .саке-link:focus {
   color: #e4e4e4;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0 );
+  width: 1px;
+  height: 1px;margin: -1px;
+}
+/*img {
+  min-width: 100%;
+  height: auto;
+}*/
 
 
+.main-part {
+background-color: #fff;
+}
 .main-header-slider,
 .main-header,
 .title {
@@ -61,18 +74,18 @@ a {
   line-height: 55px;
   font-weight: 500;
 }
-.button-slider {
+.slider-link {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
+  
   text-transform: uppercase;
 
   background-color: #fb565a;
   border: none;
 }
-.button-slider:hover {
+.slider-link:hover {
   background-color: #e74246;
 }
 .button-gallery-nnavigation {
@@ -87,21 +100,20 @@ a {
   line-height: 30px;
   font-weight: 700;
 }
-.button-services-1 {
+.services-link-1 {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
+  color: #ffffff;  
   text-transform: uppercase;
 
   background-color: #fb565a;
   border: none;
 }
-.button-services-1:hover {
+.services-link-1:hover {
   background-color: #e74246;
 }
-.button-services-2 {
+.services-link-2 {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
@@ -112,10 +124,10 @@ a {
   background-color: #00ca74;
   border: none;
 }
-.button-services-2:hover {
+.services-link-2:hover {
   background-color: #00bc6c;
 }
-.button-services-3 {
+.services-link-3 {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
@@ -126,7 +138,7 @@ a {
   background-color: #efc84a;
   border: none;
 }
-.button-services-3:hover {
+.services-link-3:hover {
   background-color: #eab535;
 }
 
@@ -303,14 +315,10 @@ body {
 
 /* ----- main-header----- */
 
-.main-header {
-  width: 100%;  
-  min-height: 125px;
-  margin-bottom: -50px;
+.main-header {   
+  min-height: 125px;  
 }
-.main-navigation {
-  width: 1160px;
-  margin: 0 auto;  
+.main-navigation {    
   padding-top: 45px;  
   padding-bottom: 15px;
   display: flex;
@@ -323,19 +331,21 @@ body {
   height: 65px;
 }
 .main-header-logo {
-  width: 160px;
+  width: 360px;
   height: 65px;
 }
-.site-navigation {
-  width: 440px;
+.site-navigation {  
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+.site-navigation a {
+  margin-right: 45px;
+}
+
 .user-navigation {
-  width: 160px;
-  margin: 0;
-  padding: 0;
+  width: 160px;  
   display: flex;
   justify-content: flex-end;
   font-display: column;
@@ -416,7 +426,7 @@ body {
 
 /* ----- main-footer ----- */
 
-.main-footer {
+.footer-contacts{
   padding: 54px 0;  
   margin-top: 80px;
   background: url(../img/contacts/map-marker.jpg) center center no-repeat;
