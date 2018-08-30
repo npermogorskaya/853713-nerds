@@ -27,8 +27,7 @@ a {
   list-style: none;
 }
 .site-navigation a,
-.tab a,
-.tab-filters a {
+.tab a {
   color: #000;
 }
 .site-navigation a:hover,
@@ -230,13 +229,25 @@ legend {
   font-weight: 700;
   text-transform: uppercase;
 }
-.tab-filters{
+.tab-filters {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  margin-right: 20px;
   text-transform: uppercase;
 }
-.breadcrumbs-current a {
+.breadcrumbs-current-1 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.302);
+}
+.breadcrumbs-current-2 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-right: 40px;
   color: rgba(0, 0, 0, 0.302);
 }
 
@@ -251,7 +262,7 @@ legend {
   line-height: 20px;
   font-weight: 500;
 }
-.button-filters {
+.filters-link {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
@@ -262,7 +273,7 @@ legend {
   background-color: #eeeeee;
   border: none;
 }
-.button-filters:hover {
+.filters-link:hover {
   background-color: #e0e0e0;
 }
 
@@ -300,7 +311,36 @@ legend {
   text-transform: uppercase;
 } 
 
-/* ----- Сеточные стили ----- */
+.pagination-item{
+  width: 50px;
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #00000;  
+
+  background-color: #eeeeee;
+  border: none;
+}
+.pagination-item:hover {
+  background-color: #e0e0e0;
+}
+.pagination-item-1{
+  width: 265px;
+  font-style: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #00000;
+  
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+  border: none;
+}
+.pagination-item-1:hover {
+  background-color: #e0e0e0;
+}
+
+/* ----- Сеточные стили индекса----- */
 
 html,
 body {
@@ -308,7 +348,7 @@ body {
   
 }
 .container {
-  width: 1120px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -460,3 +500,67 @@ body {
 .footer-text {
   width: 550px;
 }
+/* ----- Сеточные стили каталога----- */
+
+.title {
+  padding-top: 75px;
+  padding-bottom: 110px;
+}
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500; 
+  text-align: center; 
+}
+
+/* ----- Табы----- */
+
+.tab {
+  margin: 55px 0;
+  display: flex;       
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+  margin: 50px 0;
+  display: flex;        
+  justify-content: space-between;
+}
+.filter-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.filters-selection {
+  width: 260px;
+  display: flex;        
+  flex-direction: column;
+}
+.filters-1,
+.filters-2 {
+  margin-bottom: 40px;
+}
+.filters-selection-site {  
+  display: flex; 
+  justify-content: flex-end;         
+  flex-direction: column;  
+}
+.filters-selection-list {
+  display: flex;
+  justify-content: space-between;
+}
+.group-site {
+  width: 760px;
+  margin-bottom: 30px;
+  display: flex;        
+  justify-content: space-between;
+}
+.group-site-link {
+ display: flex;  
+ margin-top: 15px;
+ margin-bottom: -20px;
+}
+.pagination-item {
+  margin-right: 10px;  
+}
+
