@@ -17,17 +17,15 @@ a {
   text-decoration: none;
 }
 .site-navigation,
-.shop-navigation,
+.statistics-list,
 .footer-navigation,
 .list-of-services,
 .tab,
 .tab-filters,
-.filter-option,
-.user-navigation {
+.filter-option {
   list-style: none;
 }
-.site-navigation a,
-.tab a {
+.site-navigation-link {
   color: #000;
 }
 .site-navigation a:hover,
@@ -53,12 +51,23 @@ a {
 .main-part {
 background-color: #fff;
 }
-.main-header-slider,
+.main-slider-wrap,
 .main-header,
 .title {
   background-color: #eeeeee;
 }
-
+.main-slider-item-1 {
+  min-height: 413px;
+  background: url(../img/main-slider/slide1.png) center right no-repeat;
+}
+.main-slider-item-2 {
+  min-height: 413px;
+  background: url(../img/main-slider/slide2.png) center right no-repeat;
+}
+.main-slider-item-3 {
+  min-height: 413px;
+  background: url(../img/main-slider/slide3.png) center right no-repeat;
+}
 .main-navigation {
   font-family: 16px;
   line-height: 30px;
@@ -68,10 +77,13 @@ background-color: #fff;
 .саке-link {
   color: #000;  
 }
-.main-slider h2 {
+.offer-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+}
+.main-slider-text p {
+  margin-bottom: 45px;
 }
 .slider-link {
   font-style: 16px;
@@ -94,18 +106,19 @@ background-color: #fff;
 .services {
   background-color: #fff;
 }
-.list-item h3 {
+.list-of-services-item h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
-.services-link-1 {
+.serv-link {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;  
   text-transform: uppercase;
-
+}
+.services-link-1 {
   background-color: #fb565a;
   border: none;
 }
@@ -113,13 +126,6 @@ background-color: #fff;
   background-color: #e74246;
 }
 .services-link-2 {
-  font-style: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
   background-color: #00ca74;
   border: none;
 }
@@ -127,13 +133,6 @@ background-color: #fff;
   background-color: #00bc6c;
 }
 .services-link-3 {
-  font-style: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
   background-color: #efc84a;
   border: none;
 }
@@ -141,12 +140,12 @@ background-color: #fff;
   background-color: #eab535;
 }
 
-.shop h2 {
+.about-us-statistics h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
-.shop h3 {
+.about-us-statistics h3 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -362,6 +361,7 @@ body {
   padding-top: 45px;  
   padding-bottom: 15px;
   display: flex;
+  align-items: center; 
   justify-content: space-between;  
 }
 .site-navigation {
@@ -392,21 +392,19 @@ body {
   align-items: center;
 }
 
-/* ----- main-header-slider----- */
+/* ----- main-slider-wrap----- */
 
-.main-header-slider {
+.main-slider-wrap {
   width: 100%;
-  height: 430px;
+  height: 413px;
   margin: 0 auto; 
 }
-.main-slider-item {
+.main-slider-item-1,
+.main-slider-item-2,
+.main-slider-item-3 {
   display: flex;
   font-display: column;
   align-items: center;
-}
-.main-slider-text {
-  width: 400px;
-  margin-right: 30px;
 }
 .product-photo-full {
   width: 710px;
@@ -422,26 +420,26 @@ body {
   justify-content: space-between;
 }
 
-.list-item {
+.list-of-services-item {
   width: 300px;
 }
 
-/* ----- shop----- */
+/* ----- about-us-statistics----- */
 
-.shop {
+.about-us-statistics {
   margin: 0;
   padding: 80px 0;
   display: flex;    
   justify-content: space-between;
 }
-.shop-title {
+.about-us {
   width: 655px;
 }
-.shop-img {
+.statistics {
   width: 380px;    
   justify-content: flex-end; 
 }
-.shop-navigation {
+.statistics-list {
   margin: 0;
   padding: 0;
   display: flex;  
@@ -518,7 +516,7 @@ body {
   justify-content: space-between;
 }
 
-.filters {
+.filters-item {
   width: 260px;
   margin: 50px 0;
   display: flex;        
@@ -533,8 +531,8 @@ body {
   display: flex;        
   flex-direction: column;
 }
-.filters-1,
-.filters-2 {
+.filters-item-1,
+.filters-item-2 {
   margin-bottom: 40px;
 }
 .filters-selection-site {  
@@ -542,7 +540,7 @@ body {
   justify-content: flex-end;         
   flex-direction: column;  
 }
-.filters-selection-list {
+.filters-selection-wrap {
   display: flex;
   justify-content: space-between;
 }
@@ -552,7 +550,7 @@ body {
   display: flex;        
   justify-content: space-between;
 }
-.group-site-link {
+.pagination {
  display: flex;  
  margin-top: 15px;
  margin-bottom: -20px;
