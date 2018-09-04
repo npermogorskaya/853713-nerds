@@ -50,6 +50,9 @@ a {
   min-width: 100%;
   height: auto;
 }*/
+.btn {
+  width: 160px;
+}
 
 
 .main-part {
@@ -90,15 +93,17 @@ background-color: #fff;
   margin-bottom: 45px;
 }
 .slider-link {
+  display: block;
   font-style: 16px;
   line-height: 18px;
   text-align: center;
-  color: #ffffff;
-  
+  color: #ffffff;  
   text-transform: uppercase;
-
   background-color: #fb565a;
   border: none;
+  width: 240px;
+  padding: 15px 0;
+  border-radius: 3px;
 }
 .slider-link:hover {
   background-color: #e74246;
@@ -106,6 +111,7 @@ background-color: #fff;
 .button-gallery-nnavigation {
   text-align: center;
 }
+
 
 .services {
   background-color: #fff;
@@ -116,6 +122,10 @@ background-color: #fff;
   font-weight: 700;
 }
 .serv-link {
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  border-radius: 3px;
   font-style: 16px;
   line-height: 18px;
   text-align: center;
@@ -168,6 +178,9 @@ background-color: #fff;
   text-transform: uppercase;
 }
 .button-contacts {
+  width: 220px;
+  padding: 15px 0;
+  border-radius: 3px;
   font-style: 16px;
   line-height: 18px;
   text-align: center;
@@ -230,7 +243,7 @@ b {
   padding-right: 20px;
   padding-left: 20px;  
   background-color: #f1f1f1;  
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .range-controls .scale {
   height: 2px;
@@ -310,6 +323,9 @@ legend {
   font-weight: 500;
 }
 .filters-link {
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
   font-style: 16px;
   line-height: 18px;
   text-align: center;
@@ -336,7 +352,7 @@ legend {
   color: #283136;
   
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #f1f1f1;
 }
 
@@ -375,6 +391,10 @@ legend {
 } 
 
 .pagination-item{
+  display: block;
+  padding: 15px;
+  margin-right: 10px; 
+  border-radius: 3px;
   width: 50px;
   font-style: 16px;
   line-height: 18px;
@@ -387,7 +407,14 @@ legend {
 .pagination-item:hover {
   background-color: #e0e0e0;
 }
+.pagination-item-0 {
+  background-color: #ffffff;
+  border: 3px #eeeeee solid;
+}
 .pagination-item-1{
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
   width: 265px;
   font-style: 16px;
   line-height: 18px;
@@ -636,8 +663,6 @@ display: flex;
  margin-top: 15px;
  margin-bottom: -20px;
 }
-.pagination-item {
-  margin-right: 10px;  
-}
+
 
 
