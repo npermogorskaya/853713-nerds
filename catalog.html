@@ -33,191 +33,213 @@
 <main>
   
   <div class="title">
-
+    
+    <div class="container">
    <h1 class="page-title">Магазин готовых шаблонов</h1>
+  </div>
 
   </div>
+  
 <div class="container">
 
-<section class="catalog-wrap">
+<div class="catalog-hop">
 
-<div class="tab">
-   <a href="studio.html">Стоимость:</a>
-   <a href="studio.html">Сортировать:</a>
-
-<div class="tab-wrapper">
-   <a class="tab-filters" href="studio.html">по цене</a>
-   <a class="breadcrumbs-current-1" href="studio.html">по типу</a>
-   <a class="breadcrumbs-current-2" href="studio.html">по названию</a>
-   <a class="button-navigation" href="studio.html">&#9660;</a>
-   <a class="button-navigation" href="studio.html">&#9650;</a>    
-</div>
-</div>
-
- 
-  <h2 class="visually-hidden">Фильтр товаров</h2>
-
-<div class="filters-selection-wrap">
-
-  <div class="filters-selection">
-    <!-- Здесь будет ползунок -->
+  <section class="filters">
   
-    <div class="filters-item">
-  
-      <p class="filters-item">от</p>
-      <p class="filters-item">0</p>
-      <p class="filters-item">до</p>
-      <p class="filters-item">15 000</p>
+    <div class="filters-title">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <a class="filters-title-link" href="studio.html">Стоимость:</a>
     </div>
   
-    <div class="filters-item-1">
-      <legend>Сетка:</legend>
-      <ul class="filter-wrapper">
-        <li class="filter-option">
-          <input class="filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
-          <label for="filter-care">Адаптивная</label>
-        </li>
-        <li class="filter-option">
-          <input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
-          <label for="filter-shave">Фиксированная</label>
-        </li>
-        <li class="filter-option">
-          <input class="filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
-          <label for="filter-accessories">Резиновая</label>
-        </li>
-      </ul>
+    <div class="filters-selection-wrap">
+  
+      <div class="filters-selection">
+        <div class="filters-item">
+          <!-- Здесь будет ползунок -->
+          <form class="filters-form" action="https://echo.htmlacademy.ru ">
+  
+            <div class="filters-label-1">
+              <label for="filters-bottom">от</label>
+              <input id="filters-bottom" type="text" name="name" value="" placeholder="0">
+            </div>
+            <div class="filters-label-2">
+              <label for="filters-top">до</label>
+              <input id="filters-top" type="text" name="name" value="" placeholder="15 000">
+            </div>
+          </form>
+        </div>
+  
+        <div class="filters-item-1">
+          <legend>Сетка:</legend>
+          <ul class="filter-wrapper">
+            <li class="filter-option">
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+              <label for="filter-care">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
+              <label for="filter-shave">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
+              <label for="filter-accessories">Резиновая</label>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="filters-item-2">
+          <legend>Особенности:</legend>
+          <ul class="filter-wrapper">
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california"
+                checked>
+              <label for="filter-baxter-of-california">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
+              <label for="filter-mr-natty">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" checked>
+              <label for="filter-suavecito">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+              <label for="filter-malin-goetz">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="vfilter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
+              <label for="filter-murrays">Корзина</label>
+            </li>
+          </ul>
+        </div>
+        <a class="filters-link" href="services.html">показать</a>
+        <!-- Здесь будет - я не знаю, что здесь будет -->
+      </div>
+  </section>
+  
+  <section class="catalog">
+  
+    <div class="catalog-filters">
+      
+      <div class="catalog-wrapper">
+       <a class="catalog-sort-title" href="studio.html">Сортировать:</a>
+      </div>
+
+      <div class="tab-wrapper">
+        <a class="tab-filters" href="studio.html">по цене</a>
+        <a class="breadcrumbs-current-1" href="studio.html">по типу</a>
+        <a class="breadcrumbs-current-2" href="studio.html">по названию</a>
+        <a class="button-navigation" href="studio.html">&#9660;</a>
+        <a class="button-navigation" href="studio.html">&#9650;</a>
+      </div>
     </div>
   
-    <div class="filters-item-2">
-      <legend>Особенности:</legend>
-      <ul class="filter-wrapper">
-        <li class="filter-option">
-          <input class="filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california"
-            checked>
-          <label for="filter-baxter-of-california">Слайдер</label>
-        </li>
-        <li class="filter-option">
-          <input class="filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
-          <label for="filter-mr-natty">Блок преимуществ</label>
-        </li>
-        <li class="filter-option">
-          <input class="filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" checked>
-          <label for="filter-suavecito">Новости</label>
-        </li>
-        <li class="filter-option">
-          <input class="filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
-          <label for="filter-malin-goetz">Галерея</label>
-        </li>
-        <li class="filter-option">
-          <input class="vfilter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
-          <label for="filter-murrays">Корзина</label>
-        </li>
-      </ul>
+    <div class="catalog-list">
+  
+      <div class="list-site">
+        <a class="filters-popap">
+          <img src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
+        </a>
+      
+        <!-- <div class="hover-1">    
+              <h2>Sedona</h2>
+              <p>Информационный сайт <br> для туристов</p>
+              <button class="button-catalog" type="button">9900 руб.
+                Здесь будет форма 2 
+              </button>
+             </div>-->
+      </div>
+      
+      <div class="list-site">
+        <a class="filters-popap">
+          <img src="img/catalog/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
+        </a>
+      
+        <!-- <div class="hover-2">
+              <h2>Pink App</h2>
+              <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+              <button class="button-catalog" type="button">9900 руб.
+                 Здесь будет форма 2 
+              </button>
+             </div> -->
+      </div>
+      
+      <div class="list-site">
+      
+        <a class="filters-popap">
+          <img src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
+        </a>
+      
+        <!-- <div class="hover-3">
+              <h2>Barbershop</h2>
+              <p>Сайт для салона красоты. <br> Для мужчин, да.</p>
+              <button class="button-catalog" type="button">9900 руб.
+                Здесь будет форма 2
+              </button>
+             </div> -->
+      </div>
+      
+      <div class="list-site">
+        <a class="filters-popap">
+          <img src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
+        </a>
+      
+        <!-- <div class="hover-4">
+              <h2>Mishka</h2>
+              <p>Интернет магазин <br> вязанных игрушек</p>
+              <button class="button-catalog" type="button">9900 руб.
+                 Здесь будет форма 2
+              </button>
+             </div>-->
+      
+      </div>
+      
+      <div class="list-site">
+      
+        <a class="filters-popap">
+          <img src="img/catalog/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
+        </a>
+      
+        <!--< div class="hover-5">
+              <h2>A Plus</h2>
+              <p>Лендинг курсов повышения <br> квалификации</p>
+              <button class="button-catalog" type="button">9900 руб.
+                 Здесь будет форма 2 
+              </button>
+             </div> -->
+      </div>
+      
+      <div class="list-site">
+        <a class="filters-popap">
+          <img src="img/catalog/img-kvast.jpg" width="360" height="576" alt="Сайт Kvast">
+        </a>
+      
+        <!-- <div class="hover-6">
+              <h2>Kvast</h2>
+              <p>Промо-сайт производителя <br> крафтового кваса</p>
+              <button class="button-catalog" type="button">9900 руб.
+                 Здесь будет форма 2 
+              </button>
+             </div> -->
+      </div>
+      
+      <div class="pagination">
+      
+        <a class="pagination-item" href="services.html">1</a>
+        <a class="pagination-item" href="services.html">2</a>
+        <a class="pagination-item" href="services.html">3</a>
+        <a class="pagination-item-1" href="services.html">Следующая</a>
+      
+      </div>
+  
     </div>
-    <a class="filters-link" href="services.html">показать</a>
-    <!-- Здесь будет - я не знаю, что здесь будет -->
-  </div>
+  </section>
   
-  <div class="filters-selection-site">
+ </div>
 
-  <div class="group-site">
-  
-    <a class="filters-popap">
-      <img src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
-    </a>
-  
-    <!-- <div class="hover-1">    
-      <h2>Sedona</h2>
-      <p>Информационный сайт <br> для туристов</p>
-      <button class="button-catalog" type="button">9900 руб.
-        Здесь будет форма 2 
-      </button>
-     </div>-->
-  
-    <a class="filters-popap">
-      <img src="img/catalog/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
-    </a>
-  
-    <!-- <div class="hover-2">
-      <h2>Pink App</h2>
-      <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
-      <button class="button-catalog" type="button">9900 руб.
-         Здесь будет форма 2 
-      </button>
-     </div> -->
-
-  </div>
-
-  <div class="group-site">
-  
-    <a class="filters-popap">
-      <img src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
-    </a>
-  
-    <!-- <div class="hover-3">
-      <h2>Barbershop</h2>
-      <p>Сайт для салона красоты. <br> Для мужчин, да.</p>
-      <button class="button-catalog" type="button">9900 руб.
-        Здесь будет форма 2
-      </button>
-     </div> -->
-  
-    <a class="filters-popap">
-      <img src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
-    </a>
-  
-    <!-- <div class="hover-4">
-      <h2>Mishka</h2>
-      <p>Интернет магазин <br> вязанных игрушек</p>
-      <button class="button-catalog" type="button">9900 руб.
-         Здесь будет форма 2
-      </button>
-     </div>-->
-
-  </div>
-
-  <div class="group-site">
-  
-    <a class="filters-popap">
-      <img src="img/catalog/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
-    </a>
-  
-    <!--< div class="hover-5">
-      <h2>A Plus</h2>
-      <p>Лендинг курсов повышения <br> квалификации</p>
-      <button class="button-catalog" type="button">9900 руб.
-         Здесь будет форма 2 
-      </button>
-     </div> -->
-  
-    <a class="filters-popap">
-      <img src="img/catalog/img-kvast.jpg" width="360" height="576" alt="Сайт Kvast">
-    </a>
-  
-    <!-- <div class="hover-6">
-      <h2>Kvast</h2>
-      <p>Промо-сайт производителя <br> крафтового кваса</p>
-      <button class="button-catalog" type="button">9900 руб.
-         Здесь будет форма 2 
-      </button>
-     </div> -->
-  </div>
-
-  <div class="pagination">
-
-    <a class="pagination-item" href="services.html">1</a>
-    <a class="pagination-item" href="services.html">2</a>
-    <a class="pagination-item" href="services.html">3</a>
-    <a class="pagination-item-1" href="services.html">Следующая</a>  
-
-  </div>
-  
-  </div>
 </div>
-  
-  
- </section>
-</div>
+
 </main>
 
 <footer>
@@ -314,3 +336,5 @@
 </body>
 
 </html>
+
+

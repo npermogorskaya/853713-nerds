@@ -20,16 +20,20 @@ a {
 .statistics-list,
 .footer-navigation,
 .list-of-services,
-.tab,
+.filters-title,
 .tab-filters,
 .filter-option {
   list-style: none;
 }
-.site-navigation-link {
+.site-navigation-link,
+.filters-title-link,
+.catalog-sort-title {
   color: #000;
 }
 .site-navigation a:hover,
-.саке-link:hover {
+.саке-link:hover,
+.filters-title-link:hover,
+.catalog-sort-title:hover {
   color: #fb565a;
 }
 .site-navigation a:focus,
@@ -215,37 +219,37 @@ b {
 .button-modal:hover {
   background-color: #e74246;
 }
+.filters-form input {
+  width: 80px;
 
+}
 legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.tab {
+.filters-title,
+.catalog-sort-title {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.tab-filters {
+.tab-wrapper {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-right: 20px;
   text-transform: uppercase;
 }
+.tab-filters {
+  margin-right: 20px;  
+}
 .breadcrumbs-current-1 {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
   margin-right: 20px;
   color: rgba(0, 0, 0, 0.302);
 }
 .breadcrumbs-current-2 {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
   margin-right: 40px;
   color: rgba(0, 0, 0, 0.302);
 }
@@ -255,7 +259,6 @@ legend {
   line-height: 22px;
   text-transform: uppercase;
 }
-
 .filter {
   font-size: 16px;
   line-height: 20px;
@@ -510,12 +513,27 @@ body {
 
 /* ----- Табы----- */
 
-.tab {
+.catalog-hop {
+display: flex; 
+}
+.filters {
+  margin-right: 120px;
+}
+.catalog-filters {
+ display: flex; 
+ justify-content: space-between;
+}
+.filters-title,
+.catalog-filters {
   margin: 55px 0;
   display: flex;       
   justify-content: space-between;
 }
-
+.filters-form {
+  width: 260px;
+  display: flex;        
+  justify-content: space-between;
+}
 .filters-item {
   width: 260px;
   margin: 50px 0;
@@ -535,21 +553,22 @@ body {
 .filters-item-2 {
   margin-bottom: 40px;
 }
-.filters-selection-site {  
-  display: flex; 
-  justify-content: flex-end;         
-  flex-direction: column;  
-}
+
 .filters-selection-wrap {
   display: flex;
   justify-content: space-between;
 }
-.group-site {
-  width: 760px;
-  margin-bottom: 30px;
-  display: flex;        
-  justify-content: space-between;
+
+.catalog {    
+  justify-content: flex-end;  
 }
+.list-site {
+  display: inline-block; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;     
+}
+
 .pagination {
  display: flex;  
  margin-top: 15px;
@@ -558,4 +577,5 @@ body {
 .pagination-item {
   margin-right: 10px;  
 }
+
 
