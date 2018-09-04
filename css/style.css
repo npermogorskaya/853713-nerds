@@ -219,9 +219,54 @@ b {
 .button-modal:hover {
   background-color: #e74246;
 }
+.range-filter {
+  width: 260px;  
+}
+.range-controls {
+  position: relative;  
+  height: 81px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;  
+  background-color: #f1f1f1;  
+  border-radius: 5px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+
+
+
+
 .filters-form input {
   width: 80px;
-
 }
 legend {
   font-size: 18px;
@@ -277,6 +322,22 @@ legend {
 }
 .filters-link:hover {
   background-color: #e0e0e0;
+}
+.filters-form input {
+  color: #283136;
+}
+.filters-label-1 input,
+.filters-label-2 input {
+  width: 80px;  
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
 }
 
 .hover-1,
@@ -536,7 +597,8 @@ display: flex;
 }
 .filters-item {
   width: 260px;
-  margin: 50px 0;
+  margin-top: 25px;
+  margin-bottom: 55px; 
   display: flex;        
   justify-content: space-between;
 }
