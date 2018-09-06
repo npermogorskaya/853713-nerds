@@ -47,6 +47,21 @@ a {
 .cart-link:focus {
   color: #e4e4e4;
 }
+.site-navigation a:active,
+.cart-link:active {
+  color: #a6a6a6;
+}
+.link-active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-header-logo-catalog:hover,
+.main-header-logo-catalog:focus {
+  opacity: 0.8;
+}
+.main-header-logo-catalog:active {
+ opacity: 0.3;  
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0 );
@@ -256,7 +271,7 @@ background-color: #fff;
   background-color: #00bc6c;
 }
 .services-link-2:active {
-  background-color: #d7373b;
+  background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
@@ -269,7 +284,7 @@ background-color: #fff;
   background-color: #eab535;
 }
 .services-link-3:active {
-  background-color: #d7373b;
+  background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
@@ -430,16 +445,27 @@ legend {
   font-weight: 400;
   text-transform: uppercase;
 }
-.tab-filters {
-  margin-right: 20px;  
+
+.button-navigation{
+  color: rgba(0, 0, 0, 0.2);
 }
 .breadcrumbs-current-1 {
   margin-right: 20px;
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.2);
 }
 .breadcrumbs-current-2 {
   margin-right: 40px;
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.2);
+}
+.breadcrumbs-current-1:hover,
+.breadcrumbs-current-2:hover,
+.button-navigation:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.breadcrumbs-current-1:active,
+.breadcrumbs-current-2:active,
+.button-navigation:active {
+  color: #000;
 }
 
 .filters-item {
@@ -462,12 +488,15 @@ legend {
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #eeeeee;
   border: none;
 }
 .filters-link:hover {
-  background-color: #e0e0e0;
+  background-color: #dfdfdf;
+}
+.filters-link:active {
+  background-color: #d5d5d5;
+  border-top: 2px solid #c8c8c8;
 }
 .filters-form input {
   color: #283136;
@@ -479,13 +508,11 @@ legend {
   margin-left: 10px;
   font-size: 16px;
   text-align: center;
-  color: #283136;
-  
+  color: #283136;  
   border: none;
   border-radius: 3px;
   background: #f1f1f1;
 }
-
 .hover-1,
 .hover-2,
 .hover-3,
@@ -524,7 +551,6 @@ legend {
   font-weight: 700;
   text-transform: uppercase;
 } 
-
 .pagination-item{
   display: block;
   padding: 15px;
@@ -535,12 +561,15 @@ legend {
   line-height: 18px;
   text-align: center;
   color: #000000;  
-
   background-color: #eeeeee;
   border: none;
 }
 .pagination-item:hover {
-  background-color: #e0e0e0;
+  background-color: #dfdfdf;
+}
+.pagination-item:active {
+  background-color: #d5d5d5;
+  border-top: 2px solid #c8c8c8;
 }
 .pagination-item-0 {
   background-color: #ffffff;
@@ -708,6 +737,16 @@ background-color: #fb565a;
 
 /* ----- main-footer ----- */
 
+.clientele-logo {
+  opacity: 0.2;
+}
+.clientele-logo:hover,
+.clientele-logo:focus {
+  opacity: 1;
+}
+.clientele-logo:active {
+ opacity: 0.1;  
+}
 .footer-contacts{
   padding: 54px 0;  
   margin-top: 80px;
@@ -759,6 +798,14 @@ background-color: #fb565a;
   border-radius: 50%;
   background: url("../img/footer/insta-icon.svg") center center no-repeat;
   background-color: #e1e1e1;
+}
+.social-button:hover::before,
+.social-button:focus::before {
+  background-color: #e74246;
+}
+.social-button:active::before {
+  background-color: #d7373b;  
+  box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);   
 }
 
 /* ----- footer ----- */
