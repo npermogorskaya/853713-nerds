@@ -33,13 +33,11 @@ a {
   list-style: none;
 }
 .site-navigation-link,
-.filters-title-link,
 .catalog-sort-title {
   color: #000;
 }
 .site-navigation a:hover,
 .cart-link:hover,
-.filters-title-link:hover,
 .catalog-sort-title:hover {
   color: #fb565a;
 }
@@ -236,6 +234,7 @@ background-color: #fff;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .serv-link {
   display: block;
@@ -298,7 +297,7 @@ background-color: #fff;
   font-weight: 500;
 }
 .about-us-statistics h3 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -386,6 +385,15 @@ b {
   border-top: 2px solid #c13135;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
+.filters-title h3,
+.catalog-wrapper h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .range-filter {
   width: 260px;  
 }
@@ -427,20 +435,12 @@ b {
 .range-controls .toggle-max {
   left: 160px;
 }
-
 .filters-form input {
   width: 80px;
 }
 legend {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.filters-title,
-.catalog-sort-title {
-  font-size: 18px;
-  line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -689,9 +689,6 @@ body {
 
 /* ----- main-header----- */
 
-.main-header {   
-  min-height: 125px;  
-}
 .main-navigation {    
   padding-top: 45px;  
   padding-bottom: 15px;
@@ -705,17 +702,13 @@ body {
   align-items: center;
   height: 65px;
 }
-.main-header-logo {
-  width: 360px;
-  height: 65px;
-}
 .site-navigation {  
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
   justify-content: center;
 }
-.site-navigation a {
+.site-navigation-link {
   margin-right: 45px;
 }
 
@@ -925,12 +918,12 @@ background-color: #fb565a;
 /* ----- Сеточные стили каталога----- */
 
 .title {
-  padding-top: 75px;
+  padding-top: 50px;
   padding-bottom: 110px;
 }
 .page-title {
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1px;
   font-weight: 500; 
   text-align: center; 
 }
@@ -959,8 +952,7 @@ display: flex;
   justify-content: space-between;
 }
 .filters-item {
-  width: 260px;
-  margin-top: 25px;
+  width: 260px;  
   margin-bottom: 55px; 
   display: flex;        
   justify-content: space-between;
