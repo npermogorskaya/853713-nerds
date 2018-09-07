@@ -182,13 +182,15 @@ background-color: #fff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;  
-  background-color: #fb565a;
+  background-color: #fb565a; 
   border-radius: 3px;
-  border: none;
+  border: none; 
+  border-top: 2px solid #fb565a;
 }
 .button:hover,
 .button:focus {
   background-color: #e74246;
+  border-top: 2px solid #e74246;
 }
 .button:active {
   background-color: #d7373b;
@@ -198,7 +200,7 @@ background-color: #fff;
 }
 
 .main-navigation {
-  font-family: 16px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;  
@@ -248,12 +250,14 @@ background-color: #fff;
   text-transform: uppercase;
 }
 .services-link-1 {
-  background-color: #fb565a;
+  background-color: #fb565a;  
   border: none;
+  border-top: 2px solid #fb565a;
 }
 .services-link-1:hover,
 .services-link-1:focus {
   background-color: #e74246;
+  border-top: 2px solid #e74246;
 }
 .services-link-1:active {
   background-color: #d7373b;
@@ -263,12 +267,14 @@ background-color: #fff;
 }
 
 .services-link-2 {
-  background-color: #00ca74;
+  background-color: #00ca74;  
   border: none;
+  border-top: 2px solid #00ca74;
 }
 .services-link-2:hover,
 .services-link-2:focus {
   background-color: #00bc6c;
+  border-top: 2px solid #00bc6c;
 }
 .services-link-2:active {
   background-color: #00aa62;
@@ -279,10 +285,12 @@ background-color: #fff;
 .services-link-3 {
   background-color: #efc84a;
   border: none;
+  border-top: 2px solid #efc84a;  
 }
 .services-link-3:hover,
 .services-link-3:focus  {
   background-color: #eab535;
+  border-top: 2px solid #eab535;
 }
 .services-link-3:active {
   background-color: #e5a722;
@@ -326,12 +334,14 @@ background-color: #fff;
   vertical-align: middle;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #fb565a;
   border: none;
+  background-color: #fb565a;  
+  border-top: 2px solid #fb565a;
 }
 .button-contacts:hover,
 .button-contacts:focus {
   background-color: #e74246;
+  border-top: 2px solid #e74246;
 }
 .button-contacts:active {
   background-color: #d7373b;
@@ -369,15 +379,16 @@ b {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
-  background-color: #fb565a;
+  background-color: #fb565a;  
   border: none;
+  border-top: 2px solid #fb565a;
 }
 .button-popap:hover,
 .button-popap:focus,
 .button-modal:hover,
 .button-modal:focus, {
   background-color: #e74246;
+  border-top: 2px solid #eeeeee;
 }
 .button-popap:active,
 .button-modal:active {
@@ -391,7 +402,7 @@ b {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  margin: 0;
+  margin-left: 25px;
   text-transform: uppercase;
 }
 
@@ -492,7 +503,7 @@ legend {
   content: "";
   position: absolute;
   top: -2px;
-  left: -35px;
+  left: -37px;
   width: 27px;
   height: 23px;
   background: url(../img/tab/checkbox-off.svg) center center no-repeat; 
@@ -547,7 +558,7 @@ legend {
   line-height: 20px;
   font-weight: 500;
 }
-.filters-link {
+.filters-btn {
   display: block;
   padding: 15px 0;
   border-radius: 3px;
@@ -558,13 +569,15 @@ legend {
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #eeeeee;
+  background-color: #eeeeee;  
   border: none;
+  border-top: 2px solid #eeeeee;
 }
-.filters-link:hover {
+.filters-btn:hover {
   background-color: #dfdfdf;
+  border-top: 2px solid #dfdfdf;
 }
-.filters-link:active {
+.filters-btn:active {
   color: #959595;
   background-color: #d5d5d5;
   border-top: 2px solid #c8c8c8;
@@ -592,26 +605,7 @@ legend {
 .hover-6 {
   background-color: #eeeeee;
 }
-.button-catalog {
-  font-style: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #fb565a;
-  border: none;
-}
-.button-catalog:hover,
-.button-catalog:focus {
-  background-color: #e74246;
-}
-.button-catalog:active {
-  background-color: #d7373b;
-  color: rgba(255, 255, 255, 0.3);
-  border-top: 2px solid #c13135;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-}
+
 .hover-1 h2,
 .hover-2 h2,
 .hover-3 h2,
@@ -633,11 +627,13 @@ legend {
   line-height: 18px;
   text-align: center;
   color: #000000;  
-  background-color: #eeeeee;
+  background-color: #eeeeee;  
   border: none;
+  border-top: 2px solid #eeeeee;
 }
 .pagination-item:hover {
   background-color: #dfdfdf;
+  border-top: 2px solid #dfdfdf;
 }
 .pagination-item:active {
   background-color: #d5d5d5;
@@ -655,24 +651,77 @@ legend {
   font-style: 16px;
   line-height: 18px;
   text-align: center;
-  color: #000000;
-  
+  color: #000000;  
   text-transform: uppercase;
-
   background-color: #eeeeee;
   border: none;
+  border-top: 2px solid #eeeeee;
 }
 .pagination-item-1:hover {
   background-color: #e0e0e0;
 }
-.overlay {
+.list-site {
+  display: inline-block;   
+  margin-left: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;     
+}
+.filters-site{
+  margin-top: -576px;
+}
+.overlay {  
   width: 360px;
-  height: 40px;
-  background: url(../img/catalog/browser.svg) center center no-repeat;
-  opacity:0.12;
+  height: 616px;
+  background: url(../img/catalog/browser.svg) top center no-repeat;
+  opacity: 0.12;
+  z-index: 97;
 }
 .overlay:hover {
   opacity:1;
+}
+/* ----- Popap----- */
+.hover-list {
+width: 360px;
+background-color: #eeeeee;
+text-align: center;
+padding-top: 30px;
+}
+.hover-list h2 {
+font-size: 18px;
+line-height: 30px;
+font-weight: 700px;
+text-transform: uppercase;
+}
+.hover-list p {
+font-size: 16px;
+line-height: 18px;
+color: #666666;
+}
+.button-catalog {
+  font-style: 16px;
+  line-height: 18px;
+  width: 200px;
+  height: 50px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;  
+  border: none;
+  border-top: 2px solid #fb565a;
+}
+.button-catalog:hover,
+.button-catalog:focus {
+  background-color: #e74246;
+  border-top: 2px solid #e74246;
+}
+.button-catalog:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 2px solid #c13135;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* ----- Сеточные стили индекса----- */
@@ -781,7 +830,10 @@ body {
 .shop-item {
   width: 100px;
 }
-
+.about-us-list {
+  margin: 0;
+  padding: 0;
+}
 .about-us-list li {
   position: relative;
   padding-left: 40px;
@@ -791,7 +843,6 @@ body {
   position: absolute;
   top: 12px;
   left: 2px;
-
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -976,12 +1027,6 @@ body {
 }
 .catalog {    
   justify-content: flex-end;  
-}
-.list-site {
-  display: inline-block;   
-  margin-right: 25px;
-  margin-bottom: 30px;
-  cursor: pointer;     
 }
 .pagination {
  display: flex;  
