@@ -22,6 +22,16 @@ body {
 a {
   text-decoration: none;
 }
+html,
+body {
+  min-width: 1200px;
+  
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .site-navigation,
 .statistics-list,
 .footer-navigation,
@@ -459,66 +469,51 @@ legend {
 .filters-item-2 legend {
   margin-top: 45px;
 }
-.filter-option-radio {
+
+
+.filter-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.filter-wrapper input  {
+  display: none;
+}
+.filter-wrapper li {
+  margin-top: 15px;
   font-size: 16px;
   line-height: 20px;
-  position: relative;
-  margin: 20px 0;  
-  }
-.filter-option-radio::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: -35px;
-  width: 25px;
-  height: 25px;
-  background: url(../img/tab/radio-off.svg) center center no-repeat; 
-  opacity: 0.28;
-} 
-.filter-option-radio-on::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: -35px;
-  width: 25px;
-  height: 25px;
-  background: url(../img/tab/radio-on.svg) center center no-repeat; 
-  opacity: 0.28;
-} 
-.filter-option-radio:hover::before,
-.filter-option-checkbox:hover::before,
-.filter-option-radio-on:hover::before,
-.filter-option-checkbox-on:hover::before {
-  opacity: 0.7;
 }
 
-.filter-option-checkbox {
-  font-size: 16px;
-  line-height: 20px;
-  position: relative;
-  margin: 20px 0;  
+.filter-wrapper-radio span {
+  display:inline-block;
+  width:25px;
+  height:25px;   
+  margin-right: 10px;    
+  vertical-align:middle;
+  background: url(../img/tab/radio-off.svg) left top no-repeat;
+  opacity: 0.6;  
 }
-
-.filter-option-checkbox::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -37px;
-  width: 27px;
-  height: 23px;
-  background: url(../img/tab/checkbox-off.svg) center center no-repeat; 
-  opacity: 0.28;
-} 
-.filter-option-checkbox-on::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -35px;
-  width: 27px;
-  height: 23px;
-  background: url(../img/tab/checkbox-on.svg) center center no-repeat; 
-  opacity: 0.28;
-} 
+.filter-wrapper-radio span:hover {
+  opacity: 1;
+}
+.filter-option-radio input:checked + label span {
+  background: url(../img/tab/radio-on.svg) left top no-repeat;
+}
+.filter-wrapper-checkbox span {
+  display:inline-block;
+  width:25px;
+  height:25px;   
+  margin-right: 10px;    
+  vertical-align:middle;
+  background: url(../img/tab/checkbox-off.svg) left top no-repeat;
+  opacity: 0.6;
+}
+.filter-wrapper-checkbox span:hover {
+  opacity: 1;
+}
+.filter-option-checkbox input:checked + label span {
+  background: url(../img/tab/checkbox-on.svg) left top no-repeat;
+}
 .tab-wrapper {
   font-size: 14px;
   line-height: 18px;
@@ -670,6 +665,7 @@ legend {
   margin-top: -576px;
 }
 .overlay {  
+  position:relative;
   width: 360px;
   height: 616px;
   background: url(../img/catalog/browser.svg) top center no-repeat;
@@ -679,23 +675,33 @@ legend {
 .overlay:hover {
   opacity:1;
 }
+
 /* ----- Popap----- */
-.hover-list {
-width: 360px;
-background-color: #eeeeee;
-text-align: center;
-padding-top: 30px;
+.hover-wrapper-1 {
+visibility: hidden;
+}
+.overlay:hover .hover-list-1 {
+  visibility: visible;
+  position: absolute;
+  top: 200px;
+  z-index: 999;
+}
+.hover-list {  
+  width: 360px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 30px;
 }
 .hover-list h2 {
-font-size: 18px;
-line-height: 30px;
-font-weight: 700px;
-text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700px;
+  text-transform: uppercase;
 }
 .hover-list p {
-font-size: 16px;
-line-height: 18px;
-color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+   color: #666666;
 }
 .button-catalog {
   font-style: 16px;
@@ -724,18 +730,28 @@ color: #666666;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+/* ----- Модальное окно----- */
+
+.popap-login {
+  display: flex;
+  justify-content: center;
+}
+.popap {
+  width: 960px;  
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid #e6ebe9;
+}
+.popap h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
 /* ----- Сеточные стили индекса----- */
 
-html,
-body {
-  min-width: 1200px;
-  
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
 
 /* ----- main-header----- */
 
@@ -1011,10 +1027,6 @@ body {
   margin-bottom: 55px; 
   display: flex;        
   justify-content: space-between;
-}
-.filter-wrapper {
-  margin-left: 35px;
-  padding: 0;
 }
 .filters-selection {
   width: 260px;
