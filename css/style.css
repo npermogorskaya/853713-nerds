@@ -1,6 +1,9 @@
 *, *::before, *::after {
   box-sizing: inherit;
 }
+* {
+  outline: 0 ;
+}
 html {
   box-sizing: border-box;
 }
@@ -655,38 +658,34 @@ legend {
 .pagination-item-1:hover {
   background-color: #e0e0e0;
 }
+
 .list-site {
+  position: relative;
   display: inline-block;   
   margin-left: 25px;
   margin-bottom: 30px;
   cursor: pointer;     
 }
-.filters-site{
-  margin-top: -576px;
-}
 .overlay {  
   position:relative;
   width: 360px;
-  height: 616px;
+  height: 40px;
   background: url(../img/catalog/browser.svg) top center no-repeat;
   opacity: 0.12;
-  z-index: 97;
+  }
+.list-site:hover .overlay {
+  opacity: 1;
 }
-.overlay:hover {
-  opacity:1;
+.list-site:hover .hover-list {
+  display: block;
 }
 
 /* ----- Popap----- */
-.hover-wrapper-1 {
-visibility: hidden;
-}
-.overlay:hover .hover-list-1 {
-  visibility: visible;
+.hover-list { 
+  display: none;
   position: absolute;
-  top: 200px;
-  z-index: 999;
-}
-.hover-list {  
+  left: 0;
+  bottom: 0;
   width: 360px;
   background-color: #eeeeee;
   text-align: center;
@@ -732,23 +731,136 @@ visibility: hidden;
 
 /* ----- Модальное окно----- */
 
-.popap-login {
+.popap-login {     
   display: flex;
+  /*display: none; */
   justify-content: center;
+  
 }
-.popap {
+.popap {  
+  position: absolute;
+  top: 35px;
   width: 960px;  
   padding-left: 100px;
-  padding-right: 100px;
-  border: 1px solid #e6ebe9;
+  padding-right: 100px;  
+  background-color: #fff;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.25); 
+  z-index: 999;
 }
+
+.popap-close {
+  position: absolute;
+  top: 56px;
+  right: 102px;  
+  width: 28px;
+  height: 28px;  
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  
+}
+.popap-close::before,
+.popap-close::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 19px;
+  height: 3px;
+  background-color: #feccce;
+}
+.popap-close::before {
+  transform: rotate(45deg);
+}
+.popap-close::after {
+  transform: rotate(-45deg);
+} 
 .popap h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 400;
+  margin-top: 80px;
   margin-bottom: 40px;
 }
+.popap-item {
+  display: inline-block;
+  width: 360px;  
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;   
+}
+.popap-item-1 input,
+.popap-item-1 label  {
+  margin-left: 40px; 
+}
+.popap-item label {
+  display: block;
+}
+.popap-item input {
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 10px;  
+  width: 360px;
+  height: 50px;
+  padding-left: 15px;
+}
+.popap-item textarea {
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 10px;  
+  width: 760px;
+  height: 115px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.popap-item input,
+.popap-item textarea {
+  box-sizing: border-box;  
+  border: 2px solid  #ded7db;
+}
+.popap-item input:hover,
+.popap-item textarea:hover {
+  color: #444444;
+  border-color: #b4b9bb;
+}
+.popap-item input:focus,
+.popap-item textarea:focus {
+  border-color: #000000;
+}
+.popap-item input:invalid,
+.popap-item textarea:invalid {
+  color: #e74246;
+  border-color: #e74246;
+}
 
+.button-popap {
+  display: block;
+  font-style: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  width: 260px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 85px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;  
+  border: none;
+  border-top: 2px solid #fb565a;
+}
+.button-popap:hover,
+.button-popap:focus {
+  background-color: #e74246;
+  border-top: 2px solid #e74246;
+}
+.button-popap:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 2px solid #c13135;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
 /* ----- Сеточные стили индекса----- */
 
 
