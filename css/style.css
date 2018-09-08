@@ -527,18 +527,20 @@ legend {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
 .button-navigation{
+  margin-right: 5px;
   color: rgba(0, 0, 0, 0.2);
 }
 .breadcrumbs-current-1 {
-  margin-right: 20px;
+  margin-right: 23px;
   color: rgba(0, 0, 0, 0.2);
 }
 .breadcrumbs-current-2 {
-  margin-right: 40px;
+  margin-right: 43px;
   color: rgba(0, 0, 0, 0.2);
 }
 .breadcrumbs-current-1:hover,
@@ -697,21 +699,21 @@ legend {
   display: none;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 7px;
   width: 360px;
   background-color: #eeeeee;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 7px;
 }
-.hover-list h2 {
+.hover-wrapper-1 .hover-list h2 {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 35px;
   font-weight: 700px;
   text-transform: uppercase;
 }
 .hover-list p {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
    color: #666666;
 }
 .button-catalog {
@@ -745,7 +747,7 @@ legend {
 
 .popap-login {     
   display: flex;
-  /*display: none; */
+  display: none;
   justify-content: center;
   
 }
@@ -899,6 +901,7 @@ legend {
 }
 .site-navigation-link {
   margin-right: 45px;
+  padding-bottom: 10px;
 }
 
 .user-navigation {
@@ -1125,11 +1128,11 @@ legend {
 
 .title {
   padding-top: 50px;
-  padding-bottom: 110px;
+  padding-bottom: 95px;
 }
 .page-title {
   font-size: 55px;
-  line-height: 1px;
+  line-height: 13px;
   font-weight: 500; 
   text-align: center; 
 }
@@ -1148,9 +1151,15 @@ legend {
 }
 .filters-title,
 .catalog-filters {
-  margin: 55px 0;
+  margin: 40px 0;
   display: flex;       
   justify-content: space-between;
+}
+.filters-title .filters-title-price {
+  margin-left: 0;
+}
+.catalog-filters .catalog-filters-sort {
+  margin-left: 25px;
 }
 .filters-form {
   width: 260px;
@@ -1178,7 +1187,8 @@ legend {
 .pagination {
  display: flex;  
  margin-top: 15px;
- margin-bottom: -20px;
+ margin-bottom: -10px;
+ margin-left: 20px;
 }
 
 
