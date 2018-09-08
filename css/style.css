@@ -133,7 +133,7 @@ background-color: #fff;
 .slider-item:nth-child(1) {
   background-image: url("../img/main-slider/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 93% 8px;
 }
 .slider-item:nth-child(2) {
   background-image: url("../img/main-slider/slide2.png");
@@ -172,12 +172,11 @@ background-color: #fff;
   border-radius: 50%;
 }
 
-.slider-item h3 {
-  max-width: 600px;
+.slider-item h3 {  
   margin: 0;
-  margin-bottom: 27px;  
+  margin-bottom: 35px;  
   font-size: 55px;
-  line-height: 55px;
+  line-height: 46px;
   font-weight: 500;
 }
 .slider-item p {
@@ -188,7 +187,7 @@ background-color: #fff;
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0; 
+  padding: 15px 0; 
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -221,13 +220,14 @@ background-color: #fff;
 .cart-link {
   position: relative;
   padding-left: 25px;
+  margin-top: 7px;
   color: #000;  
 }
 .cart-link::before {
   content: "";
   position: absolute;
   top: 7px;
-  left: 2px;
+  left: -15px;
   width: 15px;
   height: 15px;
   background-image: url(../img/header/cart-icon.svg);
@@ -246,17 +246,18 @@ background-color: #fff;
   background-color: #fff;
 }
 .list-of-services-item h3 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 24px;  
   font-weight: 700;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 .serv-link {
   display: block;
   width: 160px;
   padding: 15px 0;
+  margin-top: 35px;
   border-radius: 3px;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;  
@@ -265,7 +266,7 @@ background-color: #fff;
 .services-link-1 {
   background-color: #fb565a;  
   border: none;
-  border-top: 2px solid #fb565a;
+  border-top: 2px solid #fb565a;  
 }
 .services-link-1:hover,
 .services-link-1:focus {
@@ -314,24 +315,29 @@ background-color: #fff;
 
 .about-us-statistics h2 {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 40px;
   font-weight: 500;
 }
 .about-us-statistics h3 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 40px;  
+  margin-top: 30px;  
   text-transform: uppercase;
+}
+.about-us-statistics .about-us-title {
+  margin-top: 40px; 
+  margin-bottom: 25px; 
 }
 .shop-number {
   font-size: 45px;
   line-height: 10px;
   font-weight: 700; 
-  margin-top: 40px; 
+  margin-top: 42px; 
+  margin-bottom: 35px;
 }
 .contacts h3 {
-  font-family: 18px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -339,8 +345,9 @@ background-color: #fff;
 .button-contacts {
   width: 220px;
   padding: 15px 0;
+  margin-top: 19px;
   border-radius: 3px;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
@@ -386,7 +393,7 @@ b {
 }
 .button-popap,
 .button-modal {
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
@@ -561,7 +568,7 @@ legend {
   height: 50px;
   padding: 15px 0;
   border-radius: 3px;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   margin-top: 45px;
@@ -622,7 +629,7 @@ legend {
   margin-right: 10px; 
   border-radius: 3px;
   width: 50px;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #000000;  
@@ -647,7 +654,7 @@ legend {
   padding: 15px 0;
   border-radius: 3px;
   width: 265px;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #000000;  
@@ -708,7 +715,7 @@ legend {
    color: #666666;
 }
 .button-catalog {
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   width: 200px;
   height: 50px;
@@ -738,13 +745,13 @@ legend {
 
 .popap-login {     
   display: flex;
-  display: none; 
+  /*display: none; */
   justify-content: center;
   
 }
 .popap {  
-  position: absolute;
-  top: 35px;
+  position: absolute;  
+  top: 1700px;
   width: 960px;  
   padding-left: 100px;
   padding-right: 100px;  
@@ -756,7 +763,7 @@ legend {
 .popap-close {
   position: absolute;
   top: 56px;
-  right: 102px;  
+  right: 106px;  
   width: 28px;
   height: 28px;  
   background-color: transparent;
@@ -770,8 +777,8 @@ legend {
   position: absolute;
   top: 30px;
   left: 20px;
-  width: 19px;
-  height: 3px;
+  width: 27px;
+  height: 5px;
   background-color: #feccce;
 }
 .popap-close::before {
@@ -784,8 +791,8 @@ legend {
   font-size: 45px;
   line-height: 45px;
   font-weight: 400;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 65px;
+  margin-bottom: 25px;
 }
 .popap-item {
   display: inline-block;
@@ -840,12 +847,12 @@ legend {
 
 .button-popap {
   display: block;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   width: 260px;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 35px;
   margin-bottom: 85px;
   text-align: center;
   color: #ffffff;
@@ -872,12 +879,11 @@ legend {
 
 .main-navigation {    
   padding-top: 45px;  
-  padding-bottom: 15px;
   display: flex;
   align-items: center; 
   justify-content: space-between;  
 }
-.site-navigation {
+.site-navigation {  
   display: flex;
   font-display: column;
   align-items: center;
@@ -885,6 +891,8 @@ legend {
 }
 .site-navigation {  
   margin: 0;
+  margin-top: 5px;
+  margin-right: 10px;
   padding: 0;
   flex-wrap: wrap;
   justify-content: center;
@@ -924,20 +932,20 @@ legend {
 .list-of-services {
   margin: 0;
   padding: 80px 0;
-  display: flex;  
-  align-items: center;
+  display: flex;    
   justify-content: space-between;
 }
 
 .list-of-services-item {
   width: 300px;
+  margin-right: 100px;
 }
 
 /* ----- about-us-statistics----- */
 
 .about-us-statistics {
   margin: 0;
-  padding: 75px 0;
+  padding: 40px 0;
   display: flex;    
   justify-content: space-between;
 }
@@ -945,15 +953,20 @@ legend {
   width: 655px;
 }
 .about-us-list p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .statistics {
-  width: 380px;    
+  width: 380px;  
+  padding-left: 20px;  
   justify-content: flex-end; 
+}
+.statistics h3 {
+  margin-left: 18px;
 }
 .statistics-list {
   margin: 0;
   padding: 0;
+  padding-right: 20px;
   display: flex;  
   align-items: center;  
   justify-content: space-between;
@@ -989,7 +1002,7 @@ legend {
 
 .clientele {
   margin: 0;
-  padding: 60px 0;
+  padding: 53px 30px;
   display: flex;    
   justify-content: space-between;
 }
@@ -1008,13 +1021,19 @@ legend {
 }
 .footer-contacts{
   padding: 54px 0;  
-  margin-top: 80px;
+  margin-top: 63px;
   background: url(../img/contacts/map-marker.jpg) center center no-repeat;
 }
 .contacts {
   width: 320px;
-  padding: 45px;
+  padding: 0 50px;
+  padding-top: 32px;
+  padding-bottom: 45px;
   background-color: #fff;
+}
+.contacts-tel {
+  margin-top: -10px;
+
 }
 .social-button-vk {
   position: relative;
@@ -1081,7 +1100,7 @@ legend {
 /* ----- footer ----- */
 
 .footer-wrapper {
-  margin-top: 55px;
+  margin-top: 72px;
   margin-bottom: 65px;
   display: flex;  
   align-items: center;     
@@ -1089,7 +1108,8 @@ legend {
 }
 .footer-social {
   width: 260px; 
-  margin-right: 140px; 
+  margin-right: 162px; 
+  margin-left: -20px;
 }
 .footer-navigation {
  margin: 0;
