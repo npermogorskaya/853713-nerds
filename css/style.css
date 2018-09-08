@@ -473,7 +473,6 @@ legend {
   margin-top: 45px;
 }
 
-
 .filter-wrapper {
   margin: 0;
   padding: 0;
@@ -558,6 +557,8 @@ legend {
 }
 .filters-btn {
   display: block;
+  width: 260px;
+  height: 50px;
   padding: 15px 0;
   border-radius: 3px;
   font-style: 16px;
@@ -658,7 +659,10 @@ legend {
 .pagination-item-1:hover {
   background-color: #e0e0e0;
 }
-
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .list-site {
   position: relative;
   display: inline-block;   
@@ -681,6 +685,7 @@ legend {
 }
 
 /* ----- Popap----- */
+
 .hover-list { 
   display: none;
   position: absolute;
@@ -733,7 +738,7 @@ legend {
 
 .popap-login {     
   display: flex;
-  /*display: none; */
+  display: none; 
   justify-content: center;
   
 }
@@ -862,8 +867,6 @@ legend {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 /* ----- Сеточные стили индекса----- */
-
-
 
 /* ----- main-header----- */
 
