@@ -96,7 +96,8 @@ background-color: #fff;
   height: 18px;
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .slider-controls label {
   position: relative;  
@@ -126,7 +127,7 @@ background-color: #fff;
 }
 .slider-item {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 71px 0 81px 0;
 }
 .slider-item:nth-child(1) {
   background-image: url("../img/main-slider/slide1.png");
@@ -136,7 +137,7 @@ background-color: #fff;
 .slider-item:nth-child(2) {
   background-image: url("../img/main-slider/slide2.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% -9px;
 }
 .slider-item:nth-child(3) {
   background-image: url("../img/main-slider/slide3.png");
@@ -175,7 +176,7 @@ background-color: #fff;
 
 .slider-item h3 {  
   margin: 0;
-  margin-bottom: 35px;  
+  margin-bottom: 28px;  
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -183,7 +184,7 @@ background-color: #fff;
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 44px;
 }
 .button {
   display: block;
@@ -250,7 +251,7 @@ background-color: #fff;
 .list-of-services-item h3 {
   font-size: 24px;  
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 35px;
   text-transform: uppercase;
 }
 .serv-link {
@@ -330,7 +331,7 @@ background-color: #fff;
 }
 .about-us-statistics .about-us-title {
   margin-top: 40px; 
-  margin-bottom: 25px; 
+  margin-bottom: 30px; 
 }
 .shop-number {
   font-size: 45px;
@@ -350,7 +351,7 @@ background-color: #fff;
   vertical-align: middle;
   width: 220px;
   padding: 15px 0;
-  margin-top: 19px;
+  margin-top: 45px;
   border-radius: 3px;
   font-size: 16px;
   line-height: 18px;
@@ -429,14 +430,18 @@ b {
   margin-left: 25px;
   text-transform: uppercase;
 }
-
+.range-inputs {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
 .range-filter {
   width: 260px;  
 }
 .range-controls {
   position: relative;  
   height: 81px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;  
@@ -480,6 +485,7 @@ b {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: -4px;
 }
 .filters-item-2 h3 {
   margin-top: 45px;
@@ -585,7 +591,7 @@ b {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 38px;
   color: #000000;  
   text-transform: uppercase;
   background-color: #eeeeee;  
@@ -800,10 +806,12 @@ b {
   background-color: #feccce;
 }
 .popap-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .popap-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 } 
 .popap-close:hover::before {
 background-color: #fb565a;
@@ -986,7 +994,7 @@ background-color: #ffeeee;
   width: 655px;
 }
 .about-us-list p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .statistics {
   width: 380px;  
@@ -1029,13 +1037,14 @@ background-color: #ffeeee;
   width: 100%;
   height: 2px;
   background-color: #eeeeee;
+  margin-top: 3px;
 }
 
 /* ----- clientele ----- */
 
 .clientele {
   margin: 0;
-  padding: 53px 30px;
+  padding: 48px 28px;
   display: flex;    
   justify-content: space-between;
 }
@@ -1053,9 +1062,15 @@ background-color: #ffeeee;
  opacity: 0.1;  
 }
 .footer-contacts{
-  padding: 54px 0;  
-  margin-top: 63px;
+  padding: 61px 0;  
+  margin-top: 50px;
   background: url(../img/contacts/map-marker.jpg) center center no-repeat;
+}
+.footer-contacts-index {
+  margin-top: 80px;
+}
+.line-footer {
+  margin-top: -8px;
 }
 .contacts {
   width: 320px;
@@ -1066,7 +1081,6 @@ background-color: #ffeeee;
 }
 .contacts-tel {
   margin-top: -10px;
-
 }
 .social-button-vk {
   position: relative;
@@ -1216,10 +1230,8 @@ background-color: #ffeeee;
 }
 .pagination {
  display: flex;  
- margin-top: 15px;
- margin-bottom: -10px;
+ margin-top: 25px;
+ margin-bottom: -4px;
  margin-left: 20px;
 }
-
-
 
