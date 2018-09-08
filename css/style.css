@@ -12,7 +12,7 @@ body {
   padding: 0;
   font-family: "Roboto",  Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
   font-weight: 400;
   color: #000;
 }
@@ -30,11 +30,6 @@ body {
   min-width: 1200px;
   
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 .site-navigation,
 .statistics-list,
 .footer-navigation,
@@ -46,7 +41,8 @@ body {
   list-style: none;
 }
 .site-navigation-link,
-.catalog-sort-title {
+.catalog-sort-title,
+.hover-list-title {
   color: #000;
 }
 .site-navigation a:hover,
@@ -105,6 +101,7 @@ background-color: #fff;
 .slider-controls label {
   position: relative;  
   display: inline-block;
+  vertical-align: middle;
   width: 30px;
   height: 30px;
   padding: 8px;  
@@ -148,14 +145,17 @@ background-color: #fff;
 }
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
+  vertical-align: middle;
 }
 
 #product-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
+  vertical-align: middle;
 }
 
 #product-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: block;
+  vertical-align: middle;
 }
 #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before,
@@ -177,7 +177,7 @@ background-color: #fff;
   margin: 0;
   margin-bottom: 35px;  
   font-size: 55px;
-  line-height: 46px;
+  line-height: 55px;
   font-weight: 500;
 }
 .slider-item p {
@@ -187,6 +187,7 @@ background-color: #fff;
 }
 .button {
   display: block;
+  vertical-align: middle;
   width: 240px;
   padding: 15px 0; 
   font-size: 16px;
@@ -254,6 +255,7 @@ background-color: #fff;
 }
 .serv-link {
   display: block;
+  vertical-align: middle;
   width: 160px;
   padding: 15px 0;
   margin-top: 35px;
@@ -316,7 +318,7 @@ background-color: #fff;
 
 .about-us-statistics h2 {
   font-size: 45px;
-  line-height: 40px;
+  line-height: 45px;
   font-weight: 500;
 }
 .about-us-statistics h3 {
@@ -344,6 +346,8 @@ background-color: #fff;
   text-transform: uppercase;
 }
 .button-contacts {
+  display: block;
+  vertical-align: middle;
   width: 220px;
   padding: 15px 0;
   margin-top: 19px;
@@ -352,7 +356,6 @@ background-color: #fff;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
@@ -471,13 +474,14 @@ b {
 .filters-form input {
   width: 80px;
 }
-legend {
+.filters-item-1 h3,
+.filters-item-2 h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.filters-item-2 legend {
+.filters-item-2 h3 {
   margin-top: 45px;
 }
 
@@ -496,10 +500,10 @@ legend {
 
 .filter-wrapper-radio span {
   display:inline-block;
+  vertical-align: middle;
   width:25px;
   height:25px;   
   margin-right: 10px;    
-  vertical-align:middle;
   background: url(../img/tab/radio-off.svg) left top no-repeat;
   opacity: 0.6;  
 }
@@ -511,10 +515,10 @@ legend {
 }
 .filter-wrapper-checkbox span {
   display:inline-block;
+  vertical-align: middle;
   width:25px;
   height:25px;   
-  margin-right: 10px;    
-  vertical-align:middle;
+  margin-right: 10px;     
   background: url(../img/tab/checkbox-off.svg) left top no-repeat;
   opacity: 0.6;
 }
@@ -523,6 +527,12 @@ legend {
 }
 .filter-option-checkbox input:checked + label span {
   background: url(../img/tab/checkbox-on.svg) left top no-repeat;
+}
+.filter-option-checkbox input:disabled + label  {
+  opacity: 0.1;
+}
+.filter-option-radio input:disabled + label  {
+  opacity: 0.1;
 }
 .tab-wrapper {
   font-size: 14px;
@@ -567,6 +577,7 @@ legend {
 }
 .filters-btn {
   display: block;
+  vertical-align: middle;
   width: 260px;
   height: 50px;
   padding: 15px 0;
@@ -575,8 +586,7 @@ legend {
   line-height: 18px;
   text-align: center;
   margin-top: 45px;
-  color: #000000;
-  vertical-align: middle;
+  color: #000000;  
   text-transform: uppercase;
   background-color: #eeeeee;  
   border: none;
@@ -628,6 +638,7 @@ legend {
 } 
 .pagination-item{
   display: block;
+  vertical-align: middle;
   padding: 15px;
   margin-right: 10px; 
   border-radius: 3px;
@@ -650,10 +661,11 @@ legend {
 }
 .pagination-item-0 {
   background-color: #ffffff;
-  border: 3px #eeeeee solid;
+  border: 2px #eeeeee solid;
 }
 .pagination-item-1{
   display: block;
+  vertical-align: middle;
   padding: 15px 0;
   border-radius: 3px;
   width: 265px;
@@ -675,7 +687,8 @@ legend {
 }
 .list-site {
   position: relative;
-  display: inline-block;   
+  display: inline-block;  
+  vertical-align: middle; 
   margin-left: 25px;
   margin-bottom: 30px;
   cursor: pointer;     
@@ -684,7 +697,7 @@ legend {
   position:relative;
   width: 360px;
   height: 40px;
-  background: url(../img/catalog/browser.svg) top center no-repeat;
+  background: #e9e9e9 url(../img/catalog/browser.svg) top center no-repeat;
   opacity: 0.12;
   }
 .list-site:hover .overlay {
@@ -692,6 +705,7 @@ legend {
 }
 .list-site:hover .hover-list {
   display: block;
+  vertical-align: middle;
 }
 
 /* ----- Popap----- */
@@ -706,15 +720,16 @@ legend {
   text-align: center;
   padding-top: 7px;
 }
-.hover-wrapper-1 .hover-list h2 {
+
+.hover-list-title {
   font-size: 18px;
-  line-height: 35px;
-  font-weight: 700px;
+  line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .hover-list p {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
    color: #666666;
 }
 .button-catalog {
@@ -790,6 +805,18 @@ legend {
 .popap-close::after {
   transform: rotate(-45deg);
 } 
+.popap-close:hover::before {
+background-color: #fb565a;
+}
+.popap-close:active::before {
+background-color: #ffeeee;
+}
+.popap-close:hover::after {
+background-color: #fb565a;
+}
+.popap-close:active::after {
+background-color: #ffeeee;
+}
 .popap h2 {
   font-size: 45px;
   line-height: 45px;
@@ -799,6 +826,7 @@ legend {
 }
 .popap-item {
   display: inline-block;
+  vertical-align: middle;
   width: 360px;  
   font-size: 16px;
   line-height: 18px;
@@ -810,6 +838,7 @@ legend {
 }
 .popap-item label {
   display: block;
+  vertical-align: middle;
 }
 .popap-item input {
   font-size: 16px;
@@ -850,6 +879,7 @@ legend {
 
 .button-popap {
   display: block;
+  vertical-align: middle;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -858,8 +888,7 @@ legend {
   margin-top: 35px;
   margin-bottom: 85px;
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
+  color: #ffffff;  
   text-transform: uppercase;
   background-color: #fb565a;  
   border: none;
