@@ -67,8 +67,9 @@ body {
 }
 
 .main-header-logo-catalog:hover,
+.main-header-logo:hover,
 .main-header-logo-catalog:focus {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .main-header-logo-catalog:active {
  opacity: 0.3;  
