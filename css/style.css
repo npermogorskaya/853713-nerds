@@ -411,7 +411,7 @@ b {
 .button-popap:hover,
 .button-popap:focus,
 .button-modal:hover,
-.button-modal:focus, {
+.button-modal:focus {
   background-color: #e74246;
   border-top: 2px solid #eeeeee;
 }
