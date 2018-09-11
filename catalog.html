@@ -6,7 +6,7 @@
  <title>Каталог интернет-магазина Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>  
@@ -75,16 +75,16 @@
           <h3>Сетка:</h3>
           <ul class="filter-wrapper filter-wrapper-radio">            
             <li class="filter-option-radio">
-              <input  type="radio" id="c1" name="grid" value="Адаптивная" />
-              <label for="c1"><span></span>Адаптивная</label>              
+              <input class="radio-input" type="radio" id="c1" name="grid" value="Адаптивная" checked/>
+              <label class="filters-item-p" for="c1"><span></span>Адаптивная</label>              
             </li>
             <li class="filter-option-radio">
-              <input type="radio" id="c2" name="grid" value="Фиксированная"/>
-              <label for="c2"><span></span>Фиксированная</label>              
+              <input class="radio-input" type="radio" id="c2" name="grid" value="Фиксированная"/>
+              <label class="filters-item-p"  for="c2"><span></span>Фиксированная</label>              
             </li>
             <li class="filter-option-radio">
-              <input type="radio" id="c3" name="grid" value="Резиновая"/>
-              <label for="c3"><span></span>Резиновая</label>             
+              <input class="radio-input" type="radio" id="c3" name="grid" value="Резиновая"/>
+              <label class="filters-item-p"for="c3"><span></span>Резиновая</label>             
             </li>
           </ul>
         </div>   
@@ -93,28 +93,28 @@
           <h3>Особенности:</h3>
           <ul class="filter-wrapper filter-wrapper-checkbox">
             <li class="filter-option-checkbox">
-              <input type="checkbox" id="c4" name="slider" />
-              <label for="c4"><span></span>Слайдер</label>              
+              <input class="checkbox-input" type="checkbox" id="c4" name="slider" checked/>
+              <label class="filters-item-p" for="c4"><span></span>Слайдер</label>              
             </li>
             <li class="filter-option-checkbox">
-              <input type="checkbox" id="c5" name="advantage" />
-              <label for="c5"><span></span>Блок преимуществ</label>              
+              <input class="checkbox-input" type="checkbox" id="c5" name="advantage" />
+              <label class="filters-item-p" for="c5"><span></span>Блок преимуществ</label>              
             </li>
             <li class="filter-option-checkbox filter-option-checkbox-on">
-              <input type="checkbox" id="c6" name="news" />
-              <label for="c6"><span></span>Новости</label>              
+              <input class="checkbox-input" type="checkbox" id="c6" name="news" checked/>
+              <label class="filters-item-p" for="c6"><span></span>Новости</label>              
             </li>
             <li class="filter-option-checkbox">
-              <input type="checkbox" id="c7" name="passage" />
-              <label for="c7"><span></span>Галерея</label>              
+              <input class="checkbox-input" type="checkbox" id="c7" name="passage" />
+              <label class="filters-item-p" for="c7"><span></span>Галерея</label>              
             </li>
             <li class="filter-option-checkbox">
-              <input type="checkbox" id="c8" name="basket" />
-              <label for="c8"><span></span>Корзина</label>              
+              <input class="checkbox-input" type="checkbox" id="c8" name="basket" />
+              <label class="filters-item-p" for="c8"><span></span>Корзина</label>              
             </li>
           </ul>
         </div>
-        <button class="filters-btn" type="submit">показать </button>        
+        <button class="filters-btn button" type="submit">показать </button>        
       </div>
      </div>
     </form>
@@ -148,7 +148,7 @@
             <div class="hover-list">                 
               <a class="hover-list-title" href="#">Sedona</a>
               <p>Информационный сайт <br> для туристов</p>
-              <button class="button-catalog" type="button">9900 руб.                
+              <button class="button-catalog button" type="button">9900 руб.                
               </button>
              </div>
             </div>
@@ -163,7 +163,7 @@
             <div class="hover-list">
               <a class="hover-list-title" href="#">Pink App</a>              
               <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
-              <button class="button-catalog" type="button">9900 руб.                 
+              <button class="button-catalog button" type="button">9900 руб.                 
               </button>
              </div> 
       </div>
@@ -177,7 +177,7 @@
              <div class="hover-list">              
               <a class="hover-list-title" href="#">Barbershop</a>
               <p>Сайт для салона красоты. <br> Для мужчин, да.</p>
-              <button class="button-catalog" type="button">9900 руб.
+              <button class="button-catalog button" type="button">9900 руб.
               </button>
              </div> 
       </div>
@@ -191,7 +191,7 @@
             <div class="hover-list">
               <a class="hover-list-title" href="#">Mishka</a>              
               <p>Интернет магазин <br> вязанных игрушек</p>
-              <button class="button-catalog" type="button">9900 руб.                
+              <button class="button-catalog button" type="button">9900 руб.                
               </button>
              </div>
       
@@ -206,7 +206,7 @@
             <div class="hover-list">
               <a class="hover-list-title" href="#">A Plus</a>
               <p>Лендинг курсов повышения <br> квалификации</p>
-              <button class="button-catalog" type="button">9900 руб.                 
+              <button class="button-catalog button" type="button">9900 руб.                 
               </button>
              </div>
       </div>
@@ -220,17 +220,17 @@
             <div class="hover-list">
               <a class="hover-list-title" href="#">Kvast</a>              
               <p>Промо-сайт производителя <br> крафтового кваса</p>
-              <button class="button-catalog" type="button">9900 руб.                 
+              <button class="button-catalog button" type="button">9900 руб.                 
               </button>
              </div>
       </div>
       
       <div class="pagination">
       
-        <a class="pagination-item pagination-item-0" href="#">1</a>
-        <a class="pagination-item" href="#">2</a>
-        <a class="pagination-item" href="#">3</a>
-        <a class="pagination-item-1" href="#">Следующая</a>
+        <a class="pagination-item pagination-item-0 button" href="#">1</a>
+        <a class="pagination-item button href="#">2</a>
+        <a class="pagination-item button" href="#">3</a>
+        <a class="pagination-item-1 button" href="#">Следующая</a>
       
       </div>  
     </div>
@@ -248,10 +248,10 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <h3 class="contacts-title">hёrds desing studio</h3>
 
-        <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-        <p> тел. +7 (812) 275-75-75</p>
+        <p class="footer-contacts-catalog-p"> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer-contacts-catalog-tel"> тел. +7 (812) 275-75-75</p>
 
-        <a class="button-contacts" href="#">напишите нам</a>
+        <a class="button-contacts button" href="#">напишите нам</a>
         
       </div>
     </div>
@@ -267,7 +267,7 @@
       </div>
       <div class="footer-text">
         <b>Давайте дружить, это выгодно!</b>
-        <p> Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-text-p"> Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </div>
@@ -294,7 +294,7 @@
         <label for="popap-textarea">Текст письма:</label>
         <textarea id="popap-textarea" name="your-message" cols="40" rows="5" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button-popap" type="submit">Отправить</button>
+      <button class="button-popap button" type="submit">Отправить</button>
     </form>
     <button class="popap-close" type="button"></button>
   </section>
